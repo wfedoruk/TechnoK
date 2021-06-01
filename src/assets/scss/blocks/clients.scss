@@ -1,0 +1,196 @@
+.clients {
+    width: auto;
+    // height: 78.6rem;
+    background: $grey;
+    color: $black;
+    padding-top: 5rem;
+    position: relative;
+}
+
+.slider_nav {
+    position: relative;
+    
+    display: block;
+    margin-top: 3rem;
+    // border: 1px solid black;
+    
+}
+
+.clients_head {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.clients_dots {
+    margin-top: 3rem;
+    display: inline-flex;
+   
+    
+    
+}
+
+// .clients_circle .circle {
+//     background: $dark_grey;
+// }
+
+// .clients_circle .circle:first-child {
+//     background-color: $gold;
+// }
+
+.clients_arrows {
+    display: flex;
+    position: absolute;
+    top: -7rem;
+    right: 0;
+    
+    margin-right: 11rem;
+
+    @include breackpoint($br-1440) {
+        margin-right: 5.5rem;
+        
+        }
+}
+
+
+
+
+.clients_arrows .arrows:last-child {
+    background: $gold;
+    opacity: 1;
+}
+
+.clients_arrows .arrows:hover {
+    background: $red;
+    opacity: 1;
+}
+
+
+.clients_inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 11rem;
+
+    @include breackpoint($br-1440) {
+        margin-right: 5.5rem;
+        
+        }
+
+        @include breackpoint($br-1024) {
+            margin-right: 0;
+            
+            }
+}
+
+.clients_inner_image {
+    width: 51%;
+
+    @include breackpoint($br-1440) {
+        display: none;
+        
+    }
+}
+
+.clients_inner_image img {
+    position: absolute;
+    top: 8rem;
+    left: 0;
+    @include breackpoint($br-1680) {
+        left: -5rem;
+        
+    }
+
+    @include breackpoint($br-1440) {
+        left: -12rem;
+        
+        }
+
+    @include breackpoint($br-1366) {
+            left: -18rem;
+            
+    }
+}
+
+.clients_blocks_inner {
+    width: 49%;
+
+    @include breackpoint($br-1440) {
+        width: 100%;
+        max-width: 70rem;
+        margin: 0 auto;
+        
+    }
+}
+
+.clients_block {
+    display: flex;
+    
+    height: 15rem;
+    background-color: $white;
+    margin-bottom: 4.1rem;
+}
+
+.clients_block_image {
+    width: 14rem;
+    height: 14rem;
+    position: relative;
+    border: 5px solid $gold;
+    box-sizing: content-box;
+    background-color: $white;
+    overflow: hidden;
+  
+}
+
+.clients_block_image img {
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+// .clients_block_image:nth-child(2)  {
+//     width: 14rem;
+//     height: 14rem;
+// }
+
+.clients_block_text {
+    padding-left: 3rem;
+
+    @include breackpoint($br-1440) {
+        padding-left: 2rem;
+        
+        }
+
+    @include breackpoint($br-1366) {
+        padding-left: 1.5rem;
+            
+    }
+}
+
+.clients_heading {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin: 4.7rem 0 1rem 0;
+
+    @include breackpoint($br-1440) {
+        margin: 2.7rem 0 1rem 0;
+        
+    }
+}
+
+.clients_text {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.stars {
+    display: inline-flex    ;
+}
+
+.stars img {
+    padding-left: 1rem;
+}

@@ -1,0 +1,322 @@
+.start_block {
+    display: flex;
+    flex-wrap: wrap;
+    height: 108rem;
+    background: #1B1B1B;
+    position: relative;
+
+    @include breackpoint($br-1024) {
+        height: 71rem;   
+    }
+   
+}
+
+.left_side {
+    width: 29%;
+    height: 108rem;
+    background-color: $gold;
+
+    @include breackpoint($br-1024) {
+        width: 100%;
+        height: 20rem;
+        position: absolute;
+        left: 0;
+        bottom: 0rem;
+        z-index: 10;
+    }
+  
+}
+
+.left_side_inner {
+    margin: 17.1rem 8rem 0 5rem;
+
+   
+
+    @include breackpoint($br-1680) {
+        margin: 12rem 8rem 0 5rem;
+        
+    }
+   
+    @include breackpoint($br-1440) {
+        margin: 10rem 8rem 0 5rem;
+        
+    }
+
+    @include breackpoint($br-1280) {
+        margin: 7rem 8rem 0 5rem;
+        
+    }
+
+    @include breackpoint($br-1024) {
+        display: flex;
+       
+        margin: 0;
+        margin-top: 3.8rem;
+    }
+}
+
+.left_side_inner h3 {
+    margin-bottom: 2rem;
+    
+    text-align: left;
+    color: $black;
+    
+    @include breackpoint($br-1024) {
+        text-align: center;
+        font-size: 24px;
+        line-height: 31px;
+        text-decoration-line: underline;
+    }
+}
+
+.left_side_inner p {
+    font-size: 18px;
+    line-height: 23px;
+    color: $white;
+    margin-bottom: 10rem;
+
+    @include breackpoint($br-1680) {
+        font-size: 17px;
+        line-height: 22px;
+        margin-bottom: 8rem;
+        
+    }
+
+    @include breackpoint($br-1440) {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 5rem;
+        
+    }
+
+    @include breackpoint($br-1024) {
+        text-align: center;
+        font-size: 18px;
+        line-height: 23px;
+        margin: 0 1rem;
+    }
+}
+
+
+
+.right_side {
+    width: 71%;
+    overflow: hidden;
+    position: relative;
+    
+    @include breackpoint($br-1024) {
+        width: 100%;
+        
+        
+        
+    }
+}
+
+.right_side:before {
+    background: url(/assets/images/start_logo.png)no-repeat scroll 0 0 transparent;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: -20rem;
+    bottom: 0;
+    right: 0;
+    content: "";
+  
+    z-index: 0;
+
+    @include breackpoint1($br-1920) {
+        left: 0;
+        background-size: cover;
+        
+    }
+    
+
+    @include breackpoint($br-1440) {
+        left: -40rem;
+        
+    }
+}
+
+.right_side_slider {
+    z-index: 10;
+}
+
+
+.right_side_inner {
+    
+    height: 108rem;
+    margin-top: 36rem;
+    margin-right: 11rem;
+    float: right;
+
+    @include breackpoint($br-1024) {
+        margin-top: 21rem;
+        height: 45rem;
+        
+    }
+
+    @include breackpoint($br-1440) {
+        margin-right: 5.5rem;
+        
+    }
+}
+
+.heading {
+   
+    max-width: 85rem;
+    line-height: 8.5rem;
+    letter-spacing: 0.02em;
+    text-align: right;
+    margin-bottom: 3rem;
+    @include breackpoint($br-1024) {
+        margin-bottom: 0;
+    }
+    
+}
+
+.form_inner {
+ 
+    
+    z-index: 10;
+
+    @include breackpoint($br-1024) {
+        margin-top: 0;
+    }
+    
+}
+
+.form_inner  form {
+    display: flex;
+    max-width: 80rem;
+    max-height: 6rem;
+}
+
+.request_input {
+    margin-right: 2rem;
+    background-color: $white;
+    opacity: .7;
+    padding-left: 2rem;
+    border: none;
+    
+}
+
+.submit_input {
+    padding: 0;
+    background-color: $gold;
+    border: none;
+}
+
+.submit_input:hover {
+    padding: 0;
+    background-color: $red;
+    color: $white;
+}
+
+.form_subtext {
+    text-align: right;
+    font-size: 1.3rem;
+    margin-top: 3rem;
+}
+
+
+.start_block_bottom {
+    display: flex;
+    background-color: $white;
+    position: relative;
+   
+}
+
+.bottom_left_side {
+    width: 29%;
+    height: 20.6rem;
+    background-color: $gold;
+    position: relative;
+
+    @include breackpoint($br-1440) {
+        height: 17rem;   
+    }
+
+    @include breackpoint($br-1024) {
+        height: 15rem;   
+    }
+}
+
+.dots_inner {
+
+    // width: 11rem;
+    display: flex;
+    position: absolute;
+    top: -8.5rem;
+    left: 0rem;
+    margin-left: 5rem;
+    z-index: 10;
+
+    @include breackpoint($br-1024) {
+        top: -25rem;
+        left: unset;
+        right: 0;
+        margin-right: 5.5rem;
+    }
+
+}
+
+
+.bottom_right_side {
+    width: 71%;
+    height: 20.6rem;
+    background-color: $white;
+    position: relative;
+}
+
+.bottom_right_side h3{
+    margin: 5.4rem 0 0 11.4rem;
+    color: $black;
+   text-align: left;
+
+   @include breackpoint($br-1440) {
+    margin: 4.4rem 0 0 6.4rem;
+    
+    
+    }
+
+    @include breackpoint($br-1024) {
+        margin: 3.4rem 0 0 9.4rem;
+     
+    }
+
+}
+
+.form_arrows {
+    position: absolute;
+    top: -11.5rem;
+    right: 0;
+    display: flex;
+    
+    margin-right: 11rem;
+
+    @include breackpoint($br-1440) {
+        margin-right: 5.5rem;
+        
+    }
+
+    @include breackpoint($br-1024) {
+        top: -30rem;
+        right: 0;
+    }
+    
+}
+
+// 
+
+.display_ {
+    @include breackpoint($br-1024) {
+        display: none;
+    }
+}
+
+.display_none {
+    display: none;
+    @include breackpoint($br-1024) {
+        display: block;
+    }
+}

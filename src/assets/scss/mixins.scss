@@ -1,0 +1,11 @@
+@mixin breackpoint($br) {
+    @media (max-width: $br) {
+        @content;
+    }
+}
+
+@mixin breackpoint1($br) {
+    @media (min-width: $br) {
+        @content;
+    }
+}

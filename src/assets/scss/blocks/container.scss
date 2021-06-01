@@ -1,0 +1,8 @@
+.container {
+    max-width: 172rem;
+    background-color: $white;
+    
+    @include breackpoint($br-2560) {
+        max-width: 236rem;
+    }
+}

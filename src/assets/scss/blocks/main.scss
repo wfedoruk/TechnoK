@@ -1,0 +1,9 @@
+main {
+  
+    padding-left: $sidebar-width;
+    background-color: $white;
+
+    @include breackpoint($br-1024) {
+        padding-left: 0;
+    }
+}

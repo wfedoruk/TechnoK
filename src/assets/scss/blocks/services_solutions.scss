@@ -1,0 +1,157 @@
+.services_solutions {
+    display: block;
+    margin-top: 35rem;
+    background-color: $grey;
+    color: $black;
+
+    @include breackpoint($br-1440) {
+        margin-top: 25rem;
+        
+    }
+
+    @include breackpoint($br-1280) {
+        margin-top: 40rem;
+        
+    }
+
+}
+
+.services_solutions_head {
+    padding-top: 5rem;
+    margin-bottom: 3rem;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.serv_arrows {
+    float: right;
+    display: flex;
+    margin-top: -8rem;
+    margin-right: 11rem;
+
+    @include breackpoint($br-1440) {
+        margin-right: 5.5rem;
+        
+    }
+}
+
+.serv_arrows .arrows:last-child {
+    background: $gold;
+    opacity: 1;
+}
+
+.serv_arrows .arrows:hover {
+    background: $red;
+    opacity: 1;
+}
+
+.serv_slider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 50rem;
+    margin: 0 11rem;
+
+    @include breackpoint($br-1440) {
+        margin: 0 5.5rem;
+        
+    }
+}
+
+.serv_slider_block {
+    width: 25%;
+    height: 55.8rem;
+    margin: 0 1.5rem;
+    background-color: $grey;
+    position: relative;
+
+  
+
+}
+
+.serv_slider_block:hover {
+   
+    background-color: $white;
+
+}
+
+.serv_slider_image {
+    text-align: -webkit-center;
+}
+
+.serv_slider_image img {
+    display:block;
+    width: 100%;
+    
+
+}
+
+.serv_slider_text {
+    width: 28.2rem;
+    height: 15rem;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    
+}
+
+.serv_slider_text h5 {
+    margin-top: 4rem;
+    color: $gold;
+}
+.serv_button {
+    
+    margin: 3rem 0;
+ }
+
+.serv_button button {
+    display: none;
+    margin: auto;
+    background-color: $black;
+    color: $white;
+    
+}
+
+.serv_slider_block:hover button {
+
+    display: block;
+
+}
+
+.serv_button button:hover {
+    
+    background-color: $gold;
+    color: $black;
+}
+
+.serv_slider_block:first-child, .serv_slider_block:last-child{
+    background-color: inherit;
+}
+
+.serv_slider_block:first-child button {
+    display: none;
+}
+
+.serv_slider_block:last-child button {
+    display: none;
+}
+
+.serv_all {
+    margin-top: 10rem;
+    padding-bottom: 5rem;
+}
+
+.serv_all button{
+    display: block;
+    background-color: $red;
+    color: $white;
+    margin: 3rem auto 0 ;
+    
+}
+
+.serv_all button:hover{
+    background-color: $black;    
+}

@@ -1,0 +1,150 @@
+footer {
+    position: relative;
+    padding-top: 5rem;
+    
+    color: #959595;
+    font-size: 14px;
+    line-height: 27px;
+}
+
+.footer_inner {
+    margin: 0 11rem 5rem;
+
+    @include breackpoint($br-1440) {
+        margin: 0 5.5rem 4rem;
+        
+    }
+}
+
+.footer_nav {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 11rem;
+    float: right;
+    height: 17.5rem;
+    font-size: 16px;
+    line-height: 41px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-top: 6.5rem;
+
+    @include breackpoint($br-1440) {
+        margin-right: 5.5rem;
+        
+    }
+
+    @include breackpoint($br-1280) {
+        display: block;
+        
+    }
+}
+
+.footer_nav_list {
+    
+    margin-right: 10rem;
+
+    @include breackpoint($br-1440) {
+        margin-right: 5rem;
+        margin-bottom: 7rem;
+        
+    }
+}
+
+.footer_nav a {
+    text-decoration: none;
+    color: $red;
+}
+
+.footer_blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-right: 45rem;
+    
+    @include breackpoint($br-1440) {
+        margin-right: 35rem;
+        
+    }
+
+    @include breackpoint($br-1280) {
+        margin-right: 20rem;
+        
+    }
+    
+}
+
+.footer_block {
+    margin-top: 2rem;
+}
+
+.footer_block li:first-child, .footer_block span {
+    margin-bottom: 1rem;
+    font-size: 16px;
+    line-height: 31px;
+    color:#646464;
+}
+
+.footer_block span {
+    display: block;
+    margin: 1rem 0;
+    
+}
+
+.footer_social {
+    padding-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    
+}
+
+.footer_social div {
+    width: 4.8rem;
+    height: 4.8rem;
+    border: none;
+}
+.img_vk {
+    
+    
+    background-image: url(/assets/images/footer/vk.png);
+}
+
+.img_vk:hover {
+    background-image: url(/assets/images/footer/vk_hover.png);
+   
+}
+
+.img_inst {
+    
+    background-image: url(/assets/images/footer/inst.png);
+}
+
+.img_inst:hover {
+    background-image: url(/assets/images/footer/inst_hover.png);
+}
+
+.img_fb {
+    background-image: url(/assets/images/footer/fb.png);
+}
+
+.img_fb:hover {
+    background-image: url(/assets/images/footer/fb_hover.png);
+}
+
+.footer_policy {
+    height: 8.8rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: $grey;
+    font-size: 14px;
+    line-height: 23px;  
+    color: $black;
+    padding: 3.7rem 11rem;
+}
+
+.footer_policy div:first-child {
+    font-weight: bold;
+}

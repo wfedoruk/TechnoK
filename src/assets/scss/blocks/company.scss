@@ -1,0 +1,58 @@
+.company {
+    // height: 57.4rem;
+    background-color: $gold;
+    color: $black;
+    margin-top: 3rem;
+    
+}
+
+.company_heading {
+    padding-top: 10rem;
+    margin-bottom: 7rem;
+
+    @include breackpoint($br-1440) {
+        
+        padding-top: 5rem;
+        margin-bottom: 4rem;
+    }
+}
+
+.company_text {
+    display: block;
+    margin: 0 25rem 4rem;
+    // width: 120rem;
+    text-align: center;
+    font-size: 18px;
+    line-height: 23px;
+
+    @include breackpoint($br-1440) {
+        margin: 0 12rem 4rem;
+        
+    }
+
+    @include breackpoint($br-1366) {
+        margin: 0 8rem 4rem;
+        
+    }
+    // margin-bottom: 4rem;
+}
+
+.company_button {
+    padding-bottom: 10rem;
+
+    @include breackpoint($br-1366) {
+        padding-bottom: 5rem;
+        
+    }
+}
+
+.company_button button {
+    display: block;
+    margin: 0 auto;
+    background-color: $red;
+}
+
+.company_button button:hover {
+    background-color: $black;
+    color: $white;
+}

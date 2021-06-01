@@ -1,0 +1,250 @@
+.sidebar {
+    width: $sidebar-width;
+    height: 100vh;
+
+    background-color: #1C0B05;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 5px 0px 10px 0px #0000004D;
+
+    @include breackpoint($br-1024) {
+        width: 100%;
+        
+        height: 6rem;
+    }
+
+}
+
+.sidebar_header {
+    display: block;
+    width: auto;
+    height: 37rem;
+    padding-top: 5rem;
+    
+    margin-bottom: 52.2rem;
+
+    @include breackpoint($br-1024) {
+        margin: 0;
+        padding: 2rem 0;
+        height: auto;
+
+    }
+}
+
+.sidebar_header img {
+    width: 12.3rem;
+    height: 2.1rem;
+    margin-left: 3.8rem;
+    margin-bottom: 10rem;
+
+    @include breackpoint($br-1024) {
+        margin-left: 5rem;
+        margin-bottom: 0;
+    }
+}
+
+.sidebar_nav {
+    margin-left: 3.8rem;
+    display: inline-block;
+
+    height: 5.8rem;
+    line-height: 5.8rem;
+    
+    font-size: 2rem;
+    position: relative;
+
+    @include breackpoint($br-1024) {
+        display: none;
+    }
+
+    @include breackpoint($br-1440) {
+        font-size: 1.8rem;
+        
+    }
+}
+
+
+.arrow_nav {
+    width: 20rem;
+    margin-left: 0;
+    padding-left: 3.8rem;
+}
+
+
+
+.arrow_nav:after {
+    position: absolute;
+    top: .15rem;
+    right: 9rem;
+    
+   
+    content: url(/assets/images/arrow_right.png);
+    
+}
+
+.arrow_nav:hover:after {
+    content: url(/assets/images/arrow_gold.png);
+}
+
+.sidebar_nav a {
+    cursor: pointer;
+    
+}
+
+.sidebar_nav:hover {
+    color: $gold;
+    border-bottom: 1px solid $gold;
+}
+
+.arrow_nav:hover {
+    border: none;
+}
+
+.clicked {
+    background: $gold;
+    height: 5.8rem;
+    line-height: 5.8rem;
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+
+
+.sidebar_footer {
+    display: block;
+    width: auto;
+    padding-left: 3.8rem;
+    @include breackpoint($br-1024) {
+        display: none;
+    }
+}
+
+.tel {
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+
+    color: $gold;
+    text-decoration: none;
+    
+}
+
+.adress {
+    margin-top: 3rem;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+
+}
+
+.nav_inner {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.6rem;
+    line-height: 38px;
+    padding-top: 6.1rem;
+   
+
+
+}
+
+.nav_inner span{
+    display: block;
+    padding-top: 5rem;
+    font-size: 2rem;
+    color: $gold;
+
+}
+
+.nav_inner h4 {
+    display: block;
+    padding-top: 5rem;
+    font-size: 2rem;
+    color: $gold;
+
+}
+
+.nav_left, .nav_right {
+    width: 32rem;
+}
+
+
+.menu_button {
+    width: 2rem;
+    height: 2rem;
+    font-size: 0;
+    color: transparent;
+    cursor: pointer;
+    border: 0;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 3rem;
+    margin-right: 5.5rem;
+    z-index: 10;
+
+    @include breackpoint($br-1024) {
+        display: block;
+    }
+}
+
+.menu_item {
+    background-color: $gold;
+    width: 2rem;
+    height: .1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+   
+}
+
+.menu_item:before, .menu_item:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: .1rem;
+    background: $gold;
+    position: absolute;
+    
+    right: 0;
+    z-index: 100;
+}
+
+.menu_item:before {
+    top: .5rem;
+}
+
+.menu_item:after {
+    bottom: .5rem;
+}
+
+.nav_show {
+    display: none;
+    width: 78.6rem;
+    height: 108rem;
+    position: absolute;
+    top: 0;
+    left: 20rem;
+    z-index: 1000;
+    background-color: $black;
+}
+
+.showed {
+    display: block;
+}
+
+.close_button {
+    margin-top: 4rem;
+    margin-left: 65rem;
+    width: 10.3rem;
+    height: 2rem; 
+    
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    line-height: 34px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #6A6A6A;
+}

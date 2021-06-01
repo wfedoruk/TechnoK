@@ -1,0 +1,123 @@
+@import "vars";
+@import "mixins";
+@import "vendor/reset";
+
+
+html {
+    font-size: 10px;
+    font-family: Futura PT;
+}
+body {
+    background-color: $white;
+    font-size: 1.6rem;
+    color: $white;
+}
+h1 {
+    font-weight: bold;
+    font-size: 6.6rem;
+    text-transform: uppercase;
+    color: $white;
+
+    @include breackpoint($br-1680) {
+        font-size: 6rem;
+        line-height: 6rem;
+    }
+
+    @include breackpoint($br-1440) {
+        font-size: 5.3rem;
+        line-height: 5rem;
+        
+    }
+
+    @include breackpoint($br-1280) {
+        font-size: 4.1rem;
+        line-height: 4.8rem;
+        
+    }
+
+    @include breackpoint($br-1024) {
+        font-size: 37px;
+        line-height: 47px;
+    }
+}
+
+h3 {
+    font-size: 3.6rem;
+    line-height: 4.6rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    
+   
+    @include breackpoint($br-1440) {
+        font-size: 3.3rem;
+        line-height: 3.6rem;
+        
+    }
+
+    @include breackpoint($br-1280) {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        
+    }
+}
+
+h5 {
+    font-size: 2rem;
+    line-height: 3.8rem;
+    
+    text-transform: uppercase;
+
+    @include breackpoint($br-1680) {
+        font-size: 1.8rem;
+        line-height: 3rem;
+    }
+
+    @include breackpoint($br-1440) {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        
+    }
+}
+
+a {
+    
+    text-decoration: none;
+    color: inherit;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+@import "blocks/sidebar";
+@import "blocks/main";
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/start";
+@import "blocks/input";
+@import "blocks/arrows";
+@import "blocks/about_company";
+@import "blocks/services_solutions";
+@import "blocks/button";
+@import "blocks/loans";
+@import "blocks/company";
+@import "blocks/clients";
+@import "blocks/footer";
+@import "blocks/slider";
+
+@font-face {
+    font-family: 'Futura PT Demi';
+    src: url('FuturaPT-Demi.eot');
+    src: url('FuturaPT-Demi.eot?#iefix') format('embedded-opentype'),
+    url('FuturaPT-Demi.woff') format('woff'),
+    url('FuturaPT-Demi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+
+
