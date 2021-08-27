@@ -1,38 +1,51 @@
 .about_company {
-    position: relative;
+    margin: 0 auto;
     
+    
+    top: -5rem;
+    color: $black;
    
+   line-height: 5rem;
+
+   @include breackpoint($br-1024) {
+        margin-top: 23rem;
+    }
 }
 
 .about_company_inner {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
-    position: absolute;
-    top: -6rem;
-    left: 14.5rem;
-
+    
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    padding-left: 100px;
+    // position: absolute;
+    // top: -6rem;
+    // left: 14.5rem;
+    
     background-color: $white;
 
-    @include breackpoint($br-1440) {
-        left: 7.5rem;
-        top: -9rem;
+    // @include breackpoint($br-1440) {
+    //     left: 7.5rem;
+    //     top: -9rem;
         
-    }
+    // }
 
-    @include breackpoint($br-1024) {
-        left: 7.5rem;
-        top: -10rem;
+    // @include breackpoint($br-1024) {
+    //     left: 7.5rem;
+    //     top: -10rem;
         
-    }
+    // }
 
     
     
 }
 
 .about_company_block {
+    position: relative;
+    // z-index: 100;
     display: flex;
-    width: 47%;
+    width: 42%;
     
     background-color: $white;
     margin-bottom: 3.1rem;
@@ -41,10 +54,30 @@
     @include breackpoint($br-1280) {
         width: 90%;
         text-align: center;
-        box-shadow: 5px 0px 30px rgba(0, 0, 0, 0.1);
+       
         
     }
     
+}
+
+.about_company :hover > .about_company_block  {
+    box-shadow: 5px 0px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about_company :hover > .block_to_move_adaptiv {
+    
+    @include breackpoint($br-1280) {
+        margin-left: 70px;
+        
+    }
+}
+
+.about_company :hover > .block_to_move {
+    margin-left: 70px;
+    @include breackpoint($br-1280) {
+        margin-left: 70px;
+        
+    }
 }
 
 .about_company_image {

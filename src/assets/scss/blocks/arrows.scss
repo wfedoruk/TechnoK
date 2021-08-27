@@ -1,11 +1,53 @@
+.form_arrows {
+    width: 11rem;
+    display: flex;
+    justify-content: space-between;
+    float: right;
+    
+    
+    margin-right: 11rem;
+   
+    
+        @include breackpoint($br-1440) {
+            margin-right: 5.5rem;
+            
+            
+        }
+    
+        @include breackpoint($br-1024) {
+            top: -30rem;
+            right: 0;
+            
+        }
+        
+}
+
+
 .arrows {
     
     width: 5rem;
     height: 5rem;
-    background: $dark_grey;
-    opacity: 0.5;
-    margin-left: 1rem;
-    padding: 1.7rem  1.9rem 1.7rem  2rem;
+    // background: $dark_grey;
+    // opacity: 0.5;
+    
+    
+    background-color: rgba(191, 187, 186, 0.5);
+    outline: none;
+    border: none;
+}
+
+.arrow_right {
+    content: url('../images/arrow_right.png');
+    width: 8px;
+    height: 11px;
+   
+}
+
+.arrow_left {
+    content: url('../images/arrow_left.png');
+    width: 8px;
+    height: 11px;
+  
 }
 
 .arrows:hover {
@@ -15,6 +57,7 @@
  
 }
 
+
 .slick-arrow {
     
     width: 5rem;
@@ -23,4 +66,11 @@
     opacity: 0.5;
     margin-left: 1rem;
     padding: 1.7rem  1.9rem 1.7rem  2rem;
+}
+
+.start_arrows {
+    @include breackpoint($br-1024) {
+        float: none;
+    }
+    
 }

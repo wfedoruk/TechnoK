@@ -1,4 +1,5 @@
 .clients {
+    display: block;
     width: auto;
     // height: 78.6rem;
     background: $grey;
@@ -16,20 +17,20 @@
     
 }
 
-.clients_head {
-    font-size: 2rem;
-    line-height: 2rem;
-    margin-bottom: 5rem;
-    text-align: center;
-}
+// .clients_head {
+//     font-size: 2rem;
+//     line-height: 2rem;
+//     // margin-bottom: 5rem;
+//     text-align: center;
+// }
 
-.clients_dots {
-    margin-top: 3rem;
-    display: inline-flex;
+// .clients_dots {
+//     margin-top: 3rem;
+//     display: inline-flex;
    
     
     
-}
+// }
 
 // .clients_circle .circle {
 //     background: $dark_grey;
@@ -40,17 +41,8 @@
 // }
 
 .clients_arrows {
-    display: flex;
-    position: absolute;
-    top: -7rem;
-    right: 0;
-    
-    margin-right: 11rem;
-
-    @include breackpoint($br-1440) {
-        margin-right: 5.5rem;
-        
-        }
+   
+    margin-top: -5rem;
 }
 
 
@@ -70,7 +62,8 @@
 .clients_inner {
     display: flex;
     flex-wrap: wrap;
-    margin-right: 11rem;
+    margin-top: 3rem;
+    margin-right: 8rem;
 
     @include breackpoint($br-1440) {
         margin-right: 5.5rem;
@@ -94,7 +87,7 @@
 
 .clients_inner_image img {
     position: absolute;
-    top: 8rem;
+    top: 10rem;
     left: 0;
     @include breackpoint($br-1680) {
         left: -5rem;
@@ -112,23 +105,31 @@
     }
 }
 
+
+
+.clients_block {
+    box-sizing: content-box;
+    display: flex;
+    box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.1);
+    height: 15rem;
+    background-color: $white;
+    
+}
+
 .clients_blocks_inner {
     width: 49%;
+    margin-bottom: 4rem;
 
     @include breackpoint($br-1440) {
         width: 100%;
         max-width: 70rem;
-        margin: 0 auto;
+        margin: 0 auto 4rem;
         
     }
 }
 
-.clients_block {
-    display: flex;
-    
-    height: 15rem;
-    background-color: $white;
-    margin-bottom: 4.1rem;
+.clients_blocks_wrapper {
+    padding: 20px 30px;
 }
 
 .clients_block_image {
@@ -139,7 +140,7 @@
     box-sizing: content-box;
     background-color: $white;
     overflow: hidden;
-  
+    
 }
 
 .clients_block_image img {
@@ -171,18 +172,20 @@
 }
 
 .clients_heading {
-    font-size: 2rem;
-    line-height: 2rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 2.6rem;
     margin: 4.7rem 0 1rem 0;
 
-    @include breackpoint($br-1440) {
+    @include breackpoint($br-1680) {
+        font-size: 1.4rem;
         margin: 2.7rem 0 1rem 0;
         
     }
 }
 
 .clients_text {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 1.4rem;
     margin-bottom: 2rem;
 }

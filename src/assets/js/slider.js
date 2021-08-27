@@ -13,11 +13,11 @@ $(function() {
     
     })
 
-    $('.arrow_left').on('click', function() {
+    $('.start_btn_left').on('click', function() {
         $("#start_slider").slick('slickPrev');
       });
 
-    $('.arrow_right').on('click', function() {
+    $('.start_btn_right').on('click', function() {
         $("#start_slider").slick('slickNext');
       });
     
@@ -51,11 +51,11 @@ $(function() {
   })
 
 
-  $('.serv_arrow_left').on('click', function() {
+  $('.serv_btn_left').on('click', function() {
     $(".serv_slider").slick('slickPrev');
   });
 
-  $('.serv_arrow_right').on('click', function() {
+  $('.serv_btn_right').on('click', function() {
     $(".serv_slider").slick('slickNext');
   });
 
@@ -72,11 +72,11 @@ $(function() {
           appendDots: $('.clients_dots'),
       });
 
-      $('.clients_arrow_left').on('click', function() {
+      $('.clients_btn_left').on('click', function() {
         $(".clients_blocks_inner").slick('slickPrev');
       });
 
-      $('.clients_arrow_right').on('click', function() {
+      $('.clients_btn_right').on('click', function() {
         $(".clients_blocks_inner").slick('slickNext');
       });
       

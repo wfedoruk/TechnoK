@@ -1,3 +1,15 @@
+.sliders_controls {
+    
+    height: 5rem;
+    line-height: 5rem;
+   
+    text-align: center;
+    position: relative;
+ 
+}
+
+
+
 .slick-dots li {
     display: inline-block;
     list-style-type: none;
@@ -14,17 +26,26 @@
     margin-right: 2rem;
     opacity: .5;
     border: none;
-
-}
-
-.dots_inner ul li button{
-
+    padding: 0;
+    
     @include breackpoint($br-1024) {
         width: 0.5rem;
         height: 0.5rem;
         margin-right: 1rem;
+    
     }
+
 }
+
+
+// .dots_inner ul li button{
+
+//     @include breackpoint($br-1024) {
+//         width: 0.5rem;
+//         height: 0.5rem;
+//         margin-right: 1rem;
+//     }
+// }
 
 
 

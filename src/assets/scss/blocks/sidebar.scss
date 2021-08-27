@@ -1,4 +1,5 @@
 .sidebar {
+    font-family: 'Futura PT', sans-serif;
     width: $sidebar-width;
     height: 100vh;
 
@@ -17,10 +18,20 @@
 
 }
 
+// .sidebar_container {
+//     margin-left: 3.8rem;
+
+//     @include breackpoint($br-1024) {
+//         margin-left: 5rem;
+//         margin-bottom: 0;
+//     }
+// }
+
+
 .sidebar_header {
-    display: block;
-    width: auto;
-    height: 37rem;
+    // display: block;
+    // width: auto;
+    // height: 37rem;
     padding-top: 5rem;
     
     margin-bottom: 52.2rem;
@@ -34,27 +45,20 @@
 }
 
 .sidebar_header img {
-    width: 12.3rem;
-    height: 2.1rem;
+    // width: 12.3rem;
+    // height: 2.1rem;
     margin-left: 3.8rem;
-    margin-bottom: 10rem;
+    // margin-bottom: 10rem;
 
-    @include breackpoint($br-1024) {
-        margin-left: 5rem;
-        margin-bottom: 0;
-    }
+  
 }
 
-.sidebar_nav {
-    margin-left: 3.8rem;
-    display: inline-block;
-
-    height: 5.8rem;
-    line-height: 5.8rem;
-    
+.nav {
+    margin-top: 10rem;
+    font-weight: 400;
     font-size: 2rem;
-    position: relative;
-
+    line-height: 3.8rem;
+    
     @include breackpoint($br-1024) {
         display: none;
     }
@@ -65,27 +69,52 @@
     }
 }
 
+.sidebar_navigation >li{
+    display: block;
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.sidebar_nav {
+    margin-left: 3.8rem;
+    display: inline-block;
+
+    // height: 5.8rem;
+    // line-height: 5.8rem;
+    
+    
+    position: relative;
+
+}
+
+
+
+
+.sidebar_navigation li:hover {
+    color: $gold;
+}
+
+
 
 .arrow_nav {
-    width: 20rem;
-    margin-left: 0;
-    padding-left: 3.8rem;
-}
-
-
-
-.arrow_nav:after {
-    position: absolute;
-    top: .15rem;
-    right: 9rem;
     
    
-    content: url(/assets/images/arrow_right.png);
+    content: url(../images/arrow_right.png);
+    position: relative;
+    width: 6px;
+    height: 10px;
+    margin-left: 6px;
+    margin-bottom: 1px;
+    background-color: transparent;
+    
+
     
 }
+.sidebar_navigation li:hover .arrow_nav {
 
-.arrow_nav:hover:after {
-    content: url(/assets/images/arrow_gold.png);
+    content: url(../images/arrow_gold.png);
+    
+       
 }
 
 .sidebar_nav a {
@@ -93,19 +122,35 @@
     
 }
 
-.sidebar_nav:hover {
-    color: $gold;
-    border-bottom: 1px solid $gold;
+.sidebar_navigation >li .sidebar_nav {
+    padding-bottom: 5px;
+    border-bottom: 1px solid transparent;
 }
 
-.arrow_nav:hover {
-    border: none;
+.sidebar_navigation >li:hover .sidebar_nav{
+
+    // content: '';
+    // position: absolute;
+    // right: 0;
+    // left: 0;
+    // bottom: 10px;
+    // width: 100%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid $gold;
+
+    
+
+}
+
+.union img{
+    width: 64px;
+    height: 18px;
 }
 
 .clicked {
     background: $gold;
-    height: 5.8rem;
-    line-height: 5.8rem;
+    // height: 5.8rem;
+    // line-height: 5.8rem;
     box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.3);
 
 }
@@ -115,7 +160,7 @@
 .sidebar_footer {
     display: block;
     width: auto;
-    padding-left: 3.8rem;
+    margin-left: 3.8rem;
     @include breackpoint($br-1024) {
         display: none;
     }
@@ -156,7 +201,7 @@
 
 }
 
-.nav_inner h4 {
+.nav_inner h2 {
     display: block;
     padding-top: 5rem;
     font-size: 2rem;
@@ -182,7 +227,7 @@
     right: 0;
     margin-top: 3rem;
     margin-right: 5.5rem;
-    z-index: 10;
+    // z-index: 1000;
 
     @include breackpoint($br-1024) {
         display: block;
@@ -228,6 +273,11 @@
     left: 20rem;
     z-index: 1000;
     background-color: $black;
+
+    @include breackpoint($br-1024) {
+        
+        left: 0;
+    }
 }
 
 .showed {
