@@ -1,92 +1,91 @@
 @import "vars";
 @import "mixins";
 @import "vendor/reset";
-// @import "/src/assets/fonts/fonts/stylesheet.css";
+// @import "slick-theme";
+// @import "slick";
+
 
 
 html {
-    font-size: 10px;
-    font-family: 'Futura PT', sans-serif;
-}
-body {
-    background-color: $white;
-    font-size: 1.6rem;
-    color: $white;
-    
-}
-h1 {
-    font-weight: bold;
-    font-size: 6.6rem;
-    text-transform: uppercase;
-    color: $white;
+    font-size: 12px;
+    font-family: $book;
 
-    @include breackpoint($br-1680) {
-        font-size: 6rem;
-        line-height: 6rem;
+    @include breackpoint($br-1920) {
+        font-size: 10px;
     }
-
+   
+    @include breackpoint($br-1680) {
+        font-size: 9px;
+    }
+    
     @include breackpoint($br-1440) {
-        font-size: 5.3rem;
-        line-height: 5rem;
-        
+        font-size: 8px;
     }
 
     @include breackpoint($br-1280) {
-        font-size: 4.1rem;
-        line-height: 4.8rem;
-        
+        font-size: 7px;
     }
 
     @include breackpoint($br-1024) {
-        font-size: 37px;
-        line-height: 47px;
+        font-size: 6px;
     }
+}
+body {
+    background-color: $white;
+   
+    // color: $white;
+    
+}
+h1 {
+    font-family: $bold;
+    font-size: 6.6rem;
+    line-height: 8.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: $white;
 }
 
 h3 {
+    font-family: $demi;
     font-size: 3.6rem;
     line-height: 4.6rem;
     text-align: center;
     text-transform: uppercase;
-    font-weight: bold;
-
-    
-   
-    @include breackpoint($br-1440) {
-        font-size: 3.3rem;
-        line-height: 3.6rem;
-        
-    }
-
-    @include breackpoint($br-1280) {
-        font-size: 2.5rem;
-        line-height: 3rem;
-        
-    }
 }
 
+h4 {
+    font-family: $demi;
+    text-transform: uppercase;
+}
+  
 h5 {
+    font-family: $medium;
     font-size: 2rem;
     line-height: 3.8rem;
     
     text-transform: uppercase;
 
-    @include breackpoint($br-1680) {
-        font-size: 1.8rem;
-        line-height: 3rem;
-    }
+    // @include breackpoint($br-1680) {
+    //     font-size: 1.8rem;
+    //     line-height: 3rem;
+    // }
 
-    @include breackpoint($br-1440) {
-        font-size: 1.6rem;
-        line-height: 2.4rem;
+    // @include breackpoint($br-1440) {
+    //     font-size: 1.6rem;
+    //     line-height: 2.4rem;
         
-    }
+    // }
 }
 
 a {
     
     text-decoration: none;
     color: inherit;
+}
+
+a:hover {
+    color: $black;
+    transition: 1s;
 }
 
 *,
@@ -111,15 +110,46 @@ a {
 @import "blocks/footer";
 @import "blocks/slider";
 
-@font-face {
-    font-family: 'Futura PT Demi';
-    src: url('FuturaPT-Demi.eot');
-    src: url('FuturaPT-Demi.eot?#iefix') format('embedded-opentype'),
-    url('FuturaPT-Demi.woff') format('woff'),
-    url('FuturaPT-Demi.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    }
 
 
-
+    
+      @font-face {
+        font-family: 'Futura PT Demi';
+        src: url('../assets/fonts/fonts/FuturaPT-Demi.eot');
+        src:  url('../fonts/fonts/FuturaPT-Demi.woff') format('woff'), 
+              url('../fonts/fonts/FuturaPT-Demi.ttf') format('truetype'),
+              url('../fonts/fonts/FuturaPT-Demi.svg') format('svg'),
+              url('../fonts/fonts/FuturaPT-Demi.eot') format('embedded-opentype');
+        font-weight: 600;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'Futura PT Book';
+        src: url('../assets/fonts/fonts/FuturaPT-Book.eot');
+        src:  url('../fonts/fonts/FuturaPT-Book.woff') format('woff'), 
+              url('../fonts/fonts/FuturaPT-Book.ttf') format('truetype'),
+              url('../fonts/fonts/FuturaPT-Book.svg') format('svg'),
+              url('../fonts/fonts/FuturaPT-Book.eot') format('embedded-opentype');
+        font-weight: 400;
+        font-style: book;
+      }
+      @font-face {
+        font-family: 'Futura PT Bold';
+        src: url('../assets/fonts/fonts/FuturaPT-Bold.eot');
+        src:  url('../fonts/fonts/FuturaPT-Bold.woff') format('woff'), 
+              url('../fonts/fonts/FuturaPT-Bold.ttf') format('truetype'),
+              url('../fonts/fonts/FuturaPT-Bold.svg') format('svg'),
+              url('../fonts/fonts/FuturaPT-Bold.eot') format('embedded-opentype');
+        font-weight: 700;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'Futura PT Medium';
+        src: url('../assets/fonts/fonts/FuturaPT-Medium.eot');
+        src:  url('../fonts/fonts/FuturaPT-Medium.woff') format('woff'), 
+              url('../fonts/fonts/FuturaPT-Medium.ttf') format('truetype'),
+              url('../fonts/fonts/FuturaPT-Medium.svg') format('svg'),
+              url('../fonts/fonts/FuturaPT-Medium.eot') format('embedded-opentype');
+        font-weight: 500;
+        font-style: normal;
+      }

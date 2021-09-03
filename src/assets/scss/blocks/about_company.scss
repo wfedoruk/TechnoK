@@ -1,14 +1,12 @@
 .about_company {
     margin: 0 auto;
-    
-    
     top: -5rem;
     color: $black;
-   
-   line-height: 5rem;
+    line-height: 5rem;
+    
 
    @include breackpoint($br-1024) {
-        margin-top: 23rem;
+        margin-top: 300px;
     }
 }
 
@@ -16,9 +14,7 @@
     display: flex;
     flex-wrap: wrap;
     
-    margin-top: 5rem;
-    margin-bottom: 4rem;
-    padding-left: 100px;
+    margin: 5rem 0 4rem  14.5rem ;
     // position: absolute;
     // top: -6rem;
     // left: 14.5rem;
@@ -45,39 +41,34 @@
     position: relative;
     // z-index: 100;
     display: flex;
-    width: 42%;
+    width: 45%;
     
     background-color: $white;
     margin-bottom: 3.1rem;
     margin-right: 3rem;
 
-    @include breackpoint($br-1280) {
-        width: 90%;
-        text-align: center;
+    // @include breackpoint($br-1280) {
+    //     width: 90%;
+    //     text-align: center;
        
         
-    }
+    // }
     
 }
 
 .about_company :hover > .about_company_block  {
-    box-shadow: 5px 0px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: .5rem 0px 3rem rgba(0, 0, 0, 0.1);
+    transition: 1.5s;
 }
 
-.about_company :hover > .block_to_move_adaptiv {
-    
-    @include breackpoint($br-1280) {
-        margin-left: 70px;
-        
-    }
-}
+
 
 .about_company :hover > .block_to_move {
-    margin-left: 70px;
-    @include breackpoint($br-1280) {
-        margin-left: 70px;
+    margin-left: 7rem;
+    // @include breackpoint($br-1280) {
+    //     margin-left: 70px;
         
-    }
+    // }
 }
 
 .about_company_image {
@@ -87,17 +78,17 @@
     position: relative;
     flex-shrink: 0;
 
-    @include breackpoint($br-1440) {
-        width: 12rem;
-        height: 12rem;
+    // @include breackpoint($br-1440) {
+    //     width: 12rem;
+    //     height: 12rem;
         
-    }
+    // }
 
-    @include breackpoint($br-1280) {
-        width: 9rem;
-        height: 9rem;
+    // @include breackpoint($br-1280) {
+    //     width: 9rem;
+    //     height: 9rem;
         
-    }
+    // }
 }
 .about_image {
     width: 6rem;
@@ -117,25 +108,25 @@
     margin-top: 4.7rem;
     margin-left: 3rem;
 
-    @include breackpoint($br-1440) {
-        margin-top: 2rem;
-        margin-left: 1.5rem;
+    // @include breackpoint($br-1440) {
+    //     margin-top: 2rem;
+    //     margin-left: 1.5rem;
         
-    }
+    // }
 }
 
 .about_company_text h4 {
-    margin-bottom: 2rem;
+    padding-bottom: 2rem;
     font-size: 2rem;
     line-height: 2.6rem;
     color: $red;
 
-    @include breackpoint($br-1440) {
+    // @include breackpoint($br-1440) {
         
-        font-size: 1.8rem;
-        line-height: 2rem;
+    //     font-size: 1.8rem;
+    //     line-height: 2rem;
         
-    }
+    // }
 }
 
 .about_company_text p {
@@ -143,13 +134,13 @@
     line-height: 3.1rem;
     color: $black;
 
-    @include breackpoint($br-1680) {
-        line-height: 2rem;
+    // @include breackpoint($br-1680) {
+    //     line-height: 2rem;
         
-    }
+    // }
 
-    @include breackpoint($br-1440) {
-        line-height: 1.8rem;
+    // @include breackpoint($br-1440) {
+    //     line-height: 1.8rem;
         
-    }
+    // }
 }

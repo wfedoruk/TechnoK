@@ -5,7 +5,11 @@
    
     text-align: center;
     position: relative;
- 
+    @include breackpoint($br-1024) {
+        height: 8rem;
+        line-height: 8rem;
+    
+    }
 }
 
 
@@ -29,9 +33,9 @@
     padding: 0;
     
     @include breackpoint($br-1024) {
-        width: 0.5rem;
-        height: 0.5rem;
-        margin-right: 1rem;
+        width: 5px;
+        height: 5px;
+        margin-right: 10px;
     
     }
 

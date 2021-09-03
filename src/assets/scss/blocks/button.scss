@@ -6,25 +6,29 @@
     text-align: center;
     box-shadow: none;
     border: none;
+    font-family: $book;
 
-    @include breackpoint($br-1680) {
-        width: 22.5rem;
-        height: 5.4rem;
-    }
+    // @include breackpoint($br-1680) {
+    //     width: 22.5rem;
+    //     height: 5.4rem;
+    // }
 
-    @include breackpoint($br-1440) {
-        width: 20rem;
-        height: 4.8rem;
-        font-size: 1.6rem;
-        line-height: 3rem;
+    // @include breackpoint($br-1440) {
+    //     width: 20rem;
+    //     height: 4.8rem;
+    //     font-size: 1.6rem;
+    //     line-height: 3rem;
         
-    }
+    // }
 
-    @include breackpoint($br-1280) {
-        width: 17.5rem;
-        height: 4.2rem;
+    // @include breackpoint($br-1024) {
+    //     width: 42rem;
+    //     height: 10rem;
         
         
-    }
+    // }
 }
 
+.btn:hover {
+    transition: 1s;
+}

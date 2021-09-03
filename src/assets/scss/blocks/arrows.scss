@@ -8,16 +8,16 @@
     margin-right: 11rem;
    
     
-        @include breackpoint($br-1440) {
-            margin-right: 5.5rem;
+        // @include breackpoint($br-1440) {
+        //     margin-right: 5.5rem;
             
             
-        }
+        // }
     
         @include breackpoint($br-1024) {
             top: -30rem;
             right: 0;
-            
+            width: 18rem;
         }
         
 }
@@ -34,27 +34,42 @@
     background-color: rgba(191, 187, 186, 0.5);
     outline: none;
     border: none;
+
+    @include breackpoint($br-1024) {
+        
+        width: 8rem;
+        height: 8rem;
+    }
 }
 
 .arrow_right {
     content: url('../images/arrow_right.png');
-    width: 8px;
-    height: 11px;
+    width: .8rem;
+    height: 1.1rem;
+    
+    @include breackpoint($br-1024) {
+        width: 1.2rem;
+        height: 2rem;
+    }
    
 }
 
 .arrow_left {
     content: url('../images/arrow_left.png');
-    width: 8px;
-    height: 11px;
-  
+    width: .8rem;
+    height: 1.1rem;
+    
+    @include breackpoint($br-1024) {
+        width: 1.2rem;
+        height: 2rem;
+    }
 }
 
 .arrows:hover {
    
     background: $gold;
     opacity: 1;
- 
+    transition: 1s;
 }
 
 

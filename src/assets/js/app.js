@@ -1,29 +1,33 @@
 /* Nav*/
-document.querySelector('.background_gold').addEventListener('click', event => {
-    
-    event.preventDefault();
-    
-    document.querySelector('.nav_show').classList.toggle('showed'); 
-    document.querySelector('.background_gold').classList.toggle('clicked');
-    // document.querySelector('.sidebar_nav').style.add.color = ('fff');  
-    
-    
-})
 
-document.querySelector('.menu_button').addEventListener('click', event => {
-    
-  event.preventDefault();
-  
-  document.querySelector('.nav_show').classList.toggle('showed'); 
-  
-  
-  
-})
 
-document.querySelector('.close_button').addEventListener('click', event => {
+$(".background_gold, .menu_button").click(function() {
+  $('.nav_show').show();
+  
+  if($('.nav_show').css('display') == 'block')
+    {
+      $('.background_gold').addClass('clicked');
+      
+    } 
+});
+
+$(document).on('click', function(e) {
+  if (!$(e.target).closest(".sidebar").length) {
+    $('.nav_show').hide();
+    
+  }
+  e.stopPropagation();
+  if($('.nav_show').css('display') == 'none')
+    {
+      $('.background_gold').removeClass('clicked');
+      
+    } 
+});
+
+$('.close_button').click(function()  {
    
-    document.querySelector('.nav_show').classList.toggle('showed'); 
-    document.querySelector('.background_gold').classList.toggle('clicked');  
+  $('.nav_show').hide();
+    
 })
 
 

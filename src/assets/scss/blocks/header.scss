@@ -4,44 +4,31 @@
     position: absolute;
     top: 0;
     right: 0;
-    margin-right: 11rem;
-    padding-top: 7rem;
+    margin: 7rem 11rem 0 0;
     z-index: 10;
     display: flex;
     justify-content: space-between;
-    width: 63.8rem;
+    
     height: 2rem;
-
-    
-
+  
     @include breackpoint($br-1440) {
-        margin-right: 5.5rem;
-        width: 54.8rem;
-    }
-    
-
-    @include breackpoint($br-1280) {
-        margin-right: 2.5rem;
+        margin-top: 110px;
         
-    }
-
-    @include breackpoint($br-1024) {
-        padding-top: 8rem;
-        margin-right: 5.5rem;
     }
 }
 
 .nav_base a {
-    font-size: 16px;
-    line-height: 31px;
+    font-family: $demi;
+    font-size: 1.6rem;
+    line-height: 3.1rem;
     text-transform: uppercase;
     color: $white;
     text-decoration: none;
-
-    @include breackpoint($br-1440) {
-        font-size: 14px;
+    padding-left: 3rem;
+    // @include breackpoint($br-1440) {
+    //     font-size: 14px;
         
-    }
+    // }
 
 }
 

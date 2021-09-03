@@ -43,6 +43,10 @@
 .clients_arrows {
    
     margin-top: -5rem;
+    @include breackpoint($br-1024) {
+        margin-top: -8rem;
+                
+    }
 }
 
 
@@ -65,44 +69,45 @@
     margin-top: 3rem;
     margin-right: 8rem;
 
-    @include breackpoint($br-1440) {
-        margin-right: 5.5rem;
+    // @include breackpoint($br-1440) {
+    //     margin-right: 5.5rem;
         
-        }
+    //     }
 
-        @include breackpoint($br-1024) {
-            margin-right: 0;
+    //     @include breackpoint($br-1024) {
+    //         margin-right: 0;
             
-            }
+    //         }
 }
 
 .clients_inner_image {
     width: 51%;
 
-    @include breackpoint($br-1440) {
-        display: none;
+    // @include breackpoint($br-1440) {
+    //     display: none;
         
-    }
+    // }
 }
 
 .clients_inner_image img {
     position: absolute;
+    height: 69rem;
     top: 10rem;
     left: 0;
-    @include breackpoint($br-1680) {
-        left: -5rem;
+    // @include breackpoint($br-1680) {
+    //     left: -5rem;
         
-    }
+    // }
 
-    @include breackpoint($br-1440) {
-        left: -12rem;
+    // @include breackpoint($br-1440) {
+    //     left: -12rem;
         
-        }
+    //     }
 
-    @include breackpoint($br-1366) {
-            left: -18rem;
+    // @include breackpoint($br-1366) {
+    //         left: -18rem;
             
-    }
+    // }
 }
 
 
@@ -110,7 +115,7 @@
 .clients_block {
     box-sizing: content-box;
     display: flex;
-    box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: .5rem 0px 2rem rgba(0, 0, 0, 0.1);
     height: 15rem;
     background-color: $white;
     
@@ -120,23 +125,23 @@
     width: 49%;
     margin-bottom: 4rem;
 
-    @include breackpoint($br-1440) {
-        width: 100%;
-        max-width: 70rem;
-        margin: 0 auto 4rem;
+    // @include breackpoint($br-1440) {
+    //     width: 100%;
+    //     max-width: 90rem;
+    //     margin: 0 auto 4rem;
         
-    }
+    // }
 }
 
 .clients_blocks_wrapper {
-    padding: 20px 30px;
+    padding: 2rem 3rem;
 }
 
 .clients_block_image {
     width: 14rem;
     height: 14rem;
     position: relative;
-    border: 5px solid $gold;
+    border: .5rem solid $gold;
     box-sizing: content-box;
     background-color: $white;
     overflow: hidden;
@@ -144,7 +149,8 @@
 }
 
 .clients_block_image img {
-    
+    width: 14rem;
+    height: 14rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -160,15 +166,15 @@
 .clients_block_text {
     padding-left: 3rem;
 
-    @include breackpoint($br-1440) {
-        padding-left: 2rem;
+    // @include breackpoint($br-1440) {
+    //     padding-left: 2rem;
         
-        }
+    //     }
 
-    @include breackpoint($br-1366) {
-        padding-left: 1.5rem;
+    // @include breackpoint($br-1366) {
+    //     padding-left: 1.5rem;
             
-    }
+    // }
 }
 
 .clients_heading {
@@ -177,11 +183,11 @@
     line-height: 2.6rem;
     margin: 4.7rem 0 1rem 0;
 
-    @include breackpoint($br-1680) {
-        font-size: 1.4rem;
-        margin: 2.7rem 0 1rem 0;
+    // @include breackpoint($br-1680) {
+    //     font-size: 1.4rem;
+    //     margin: 2.7rem 0 1rem 0;
         
-    }
+    // }
 }
 
 .clients_text {

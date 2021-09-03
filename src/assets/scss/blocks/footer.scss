@@ -3,17 +3,13 @@ footer {
     padding-top: 5rem;
     
     color: #959595;
-    font-size: 14px;
-    line-height: 27px;
+    font-size: 1.4rem;
+    line-height: 2.7rem;
 }
 
 .footer_inner {
     margin: 0 11rem 5rem;
 
-    @include breackpoint($br-1440) {
-        margin: 0 5.5rem 4rem;
-        
-    }
 }
 
 .footer_nav {
@@ -24,55 +20,62 @@ footer {
     margin-right: 11rem;
     float: right;
     height: 17.5rem;
-    font-size: 16px;
-    line-height: 41px;
+    font-size: 1.6rem;
+    line-height: 4.1rem;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     font-weight: 600;
     padding-top: 6.5rem;
 
-    @include breackpoint($br-1440) {
-        margin-right: 5.5rem;
-        
-    }
+   
 
-    @include breackpoint($br-1280) {
-        display: block;
+    // @include breackpoint($br-1280) {
+    //     display: block;
         
-    }
+    // }
 }
 
 .footer_nav_list {
     
-    margin-right: 10rem;
+    margin-right: 5rem;
 
-    @include breackpoint($br-1440) {
-        margin-right: 5rem;
-        margin-bottom: 7rem;
+    // @include breackpoint($br-1440) {
+    //     margin-right: 5rem;
+    //     margin-bottom: 7rem;
         
-    }
+    // }
 }
 
 .footer_nav a {
+    font-family: $medium;
     text-decoration: none;
     color: $red;
 }
 
+.footer_nav a:hover {
+    color: $gold;
+}
+
+.footer_logo img {
+    width: 15.5rem;
+    height: 2.6rem;
+}
+
 .footer_blocks {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-right: 45rem;
+    // flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 38rem;
     
-    @include breackpoint($br-1440) {
-        margin-right: 35rem;
+    // @include breackpoint($br-1440) {
+    //     margin-right: 35rem;
         
-    }
+    // }
 
-    @include breackpoint($br-1280) {
-        margin-right: 20rem;
+    // @include breackpoint($br-1280) {
+    //     margin-right: 20rem;
         
-    }
+    // }
     
 }
 
@@ -82,8 +85,8 @@ footer {
 
 .footer_block li:first-child, .footer_block span {
     margin-bottom: 1rem;
-    font-size: 16px;
-    line-height: 31px;
+    font-size: 1.5rem;
+    line-height: 3.1rem;
     color:#646464;
 }
 
@@ -101,37 +104,40 @@ footer {
     
 }
 
-.footer_social div {
+.footer_social span {
     width: 4.8rem;
     height: 4.8rem;
     border: none;
 }
-.img_vk {
+.img_vk{
     
-    
-    background-image: url(../images/footer/vk.png);
+    width: 4.8rem;
+    height: 4.8rem;
+    content: url(../images/footer/vk.png);
 }
 
 .img_vk:hover {
-    background-image: url(../images/footer/vk_hover.png);
-   
+    content: url(../images/footer/vk_hover.png);
+    transition: 2s;
 }
 
 .img_inst {
     
-    background-image: url(../images/footer/inst.png);
+    content: url(../images/footer/inst.png);
 }
 
 .img_inst:hover {
-    background-image: url(../images/footer/inst_hover.png);
+    content: url(../images/footer/inst_hover.png);
+    transition: 1s;
 }
 
 .img_fb {
-    background-image: url(../images/footer/fb.png);
+    content: url(../images/footer/fb.png);
 }
 
 .img_fb:hover {
-    background-image: url(../images/footer/fb_hover.png);
+    content: url(../images/footer/fb_hover.png);
+    transition: 1s;
 }
 
 .footer_policy {
@@ -139,12 +145,16 @@ footer {
     display: flex;
     justify-content: space-between;
     background-color: $grey;
-    font-size: 14px;
-    line-height: 23px;  
+    font-size: 1.4rem;
+    line-height: 2.3rem;  
     color: $black;
     padding: 3.7rem 11rem;
 }
 
 .footer_policy div:first-child {
     font-weight: bold;
+}
+
+.footer_policy a:hover {
+    color: $gold;
 }
