@@ -327,7 +327,7 @@ textarea {
 html {
   font-size: 12px;
   font-family: "Futura PT Book"; }
-  @media (max-width: 1921px) {
+  @media (max-width: 1920px) {
     html {
       font-size: 10px; } }
   @media (max-width: 1681px) {
@@ -399,8 +399,8 @@ a:hover {
       height: 80px; } }
 
 .sidebar_header {
-  padding-top: 5rem;
-  margin-bottom: 44rem; }
+  min-height: calc(100vh - 15rem);
+  padding-top: 5rem; }
   @media (max-width: 1025px) {
     .sidebar_header {
       margin: 0;
@@ -408,16 +408,16 @@ a:hover {
       height: auto; } }
 
 .sidebar_header img {
+  width: 12.3rem;
   margin-left: 3.8rem; }
   @media (max-width: 1025px) {
     .sidebar_header img {
       margin-left: 8.2rem; } }
 
 .nav {
-  margin-top: 10rem;
-  font-weight: 400;
   font-size: 2rem;
-  line-height: 3.8rem; }
+  line-height: 3.8rem;
+  padding: 10rem 0 0 3.8rem; }
   @media (max-width: 1025px) {
     .nav {
       display: none; } }
@@ -429,7 +429,6 @@ a:hover {
 
 .sidebar_nav {
   color: #fff;
-  margin-left: 3.8rem;
   display: inline-block;
   position: relative; }
 
@@ -498,8 +497,7 @@ a:hover {
   display: flex;
   justify-content: space-around;
   font-size: 1.6rem;
-  line-height: 3.8rem;
-  padding-top: 6.1rem; }
+  line-height: 3.8rem; }
 
 .nav_inner h2 {
   display: block;
@@ -544,7 +542,7 @@ a:hover {
 .nav_show {
   display: none;
   width: 78.6rem;
-  height: 108rem;
+  min-height: 100vh;
   position: absolute;
   top: 0;
   left: 20rem;
@@ -618,9 +616,6 @@ main {
   display: flex;
   justify-content: space-between;
   height: 2rem; }
-  @media (max-width: 1441px) {
-    .nav_base {
-      margin-top: 110px; } }
 
 .nav_base a {
   font-family: "Futura PT Demi";
@@ -639,6 +634,7 @@ nav a:hover {
 .start_block {
   display: flex;
   flex-wrap: wrap;
+  height: 100vh;
   background: #1B1B1B;
   position: relative; }
   @media (max-width: 1025px) {
@@ -647,21 +643,22 @@ nav a:hover {
 
 .offer_block {
   width: 50rem;
-  height: 127rem;
+  min-height: calc(100vh + 22rem);
   position: absolute;
   left: 0;
-  background-color: #FEBA03; }
+  background-color: #FEBA03;
+  padding: 10rem 8rem 0 5rem; }
   @media (max-width: 1025px) {
     .offer_block {
       width: 100%;
       height: 220px;
       position: absolute;
       left: 0;
-      bottom: -220px; } }
+      bottom: -220px;
+      padding: 0; } }
 
 .offer_block_inner {
-  background-color: #FEBA03;
-  margin: 17.1rem 8rem 0 5rem; }
+  background-color: #FEBA03; }
   @media (max-width: 1025px) {
     .offer_block_inner {
       display: flex;
@@ -685,7 +682,7 @@ nav a:hover {
   font-size: 1.8rem;
   line-height: 2.3rem;
   color: #fff;
-  padding-bottom: 10rem; }
+  padding-bottom: 8rem; }
   @media (max-width: 1025px) {
     .offer_block_inner p {
       text-align: center;
@@ -698,7 +695,7 @@ nav a:hover {
   margin-left: 20rem;
   overflow: hidden;
   position: relative;
-  height: 108rem; }
+  height: 100vh; }
   @media (max-width: 1025px) {
     .banner_block {
       margin-left: 0;
@@ -711,15 +708,16 @@ nav a:hover {
   overflow: hidden; }
 
 .banner_block_image img {
-  width: 172rem;
-  height: 108rem;
+  width: 100%;
+  height: 100vh;
+  top: 0;
   opacity: .7;
-  margin-left: auto; }
+  margin-left: auto;
+  object-fit: cover; }
 
 .banner_block_inner {
-  height: 108rem;
-  margin-top: 36rem;
-  margin-right: 11rem;
+  height: 100rem;
+  padding: 36rem 11rem 0 0;
   position: absolute;
   top: 0;
   right: 0; }
@@ -956,8 +954,7 @@ input {
 
 .about_company_text {
   width: 100%;
-  margin-top: 4.7rem;
-  margin-left: 3rem; }
+  padding: 4.7rem 0 0 3rem; }
 
 .about_company_text h4 {
   padding-bottom: 2rem;
@@ -1045,7 +1042,7 @@ input {
 
 .serv_slider_text h5 {
   font-size: 1.8rem;
-  margin-top: 4rem;
+  padding-top: 4rem;
   color: #FEBA03; }
 
 .serv_button {
@@ -1195,8 +1192,7 @@ input {
   height: 575px; }
 
 .company_heading {
-  padding-top: 10rem;
-  margin-bottom: 7rem; }
+  padding: 10rem 0 7rem; }
 
 .company_text {
   display: block;

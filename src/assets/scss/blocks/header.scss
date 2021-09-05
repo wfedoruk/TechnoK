@@ -11,10 +11,10 @@
     
     height: 2rem;
   
-    @include breackpoint($br-1440) {
-        margin-top: 110px;
+    // @include breackpoint($br-1440) {
+    //     margin-top: 110px;
         
-    }
+    // }
 }
 
 .nav_base a {

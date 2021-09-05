@@ -31,5 +31,15 @@ $('.close_button').click(function()  {
 })
 
 
+const screenWidth = window.screen.width
+const screenHeight = window.screen.height
+
+console.log(screenWidth)
+console.log(screenHeight)
+
+const windowInnerWidth = window.innerWidth
+const windowInnerHeight = window.innerHeight
 
 
+console.log(windowInnerWidth)
+console.log(windowInnerHeight)

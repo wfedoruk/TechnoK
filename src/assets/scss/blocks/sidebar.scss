@@ -30,10 +30,10 @@
 .sidebar_header {
     // display: block;
     // width: auto;
-    // height: 37rem;
+    min-height: calc(100vh - 15rem);
     padding-top: 5rem;
     
-    margin-bottom: 44rem;
+    
 
     @include breackpoint($br-1024) {
         margin: 0;
@@ -44,8 +44,8 @@
 }
 
 .sidebar_header img {
-    // width: 12.3rem;
-    // height: 2.1rem;
+    width: 12.3rem;
+    
     margin-left: 3.8rem;
     // margin-bottom: 10rem;
     @include breackpoint($br-1024) {
@@ -56,10 +56,10 @@
 }
 
 .nav {
-    margin-top: 10rem;
-    font-weight: 400;
+    
     font-size: 2rem;
     line-height: 3.8rem;
+    padding: 10rem 0 0 3.8rem;
     
     @include breackpoint($br-1024) {
         display: none;
@@ -79,7 +79,7 @@
 
 .sidebar_nav {
     color: $white;
-    margin-left: 3.8rem;
+    
     display: inline-block;
 
     // height: 5.8rem;
@@ -201,7 +201,7 @@
     justify-content: space-around;
     font-size: 1.6rem;
     line-height: 3.8rem;
-    padding-top: 6.1rem;
+    
    
 
 
@@ -285,7 +285,7 @@
 .nav_show {
     display: none;
     width: 78.6rem;
-    height: 108rem;
+    min-height: 100vh;
     position: absolute;
     top: 0;
     left: 20rem;
