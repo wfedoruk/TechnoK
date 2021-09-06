@@ -424,13 +424,14 @@ a:hover {
 
 .sidebar_navigation > li {
   display: block;
-  position: relative;
-  margin-bottom: 4rem; }
+  position: relative; }
 
 .sidebar_nav {
   color: #fff;
   margin-left: 3.8rem;
   display: inline-block;
+  height: 5.8rem;
+  line-height: 5.8rem;
   position: relative; }
 
 .sidebar_navigation li:hover a {
@@ -497,20 +498,21 @@ a:hover {
 .nav_inner {
   display: flex;
   justify-content: space-around;
-  font-size: 1.6rem;
-  line-height: 3.8rem; }
+  font-size: 1.6rem; }
 
 .nav_inner h2 {
   display: block;
-  padding-top: 7rem;
-  font-size: 2rem;
-  color: #FEBA03; }
+  padding-top: 5.5rem;
+  font-size: 1.8rem;
+  color: #FEBA03;
+  line-height: 3.8rem; }
 
 .nav_inner a {
   position: relative; }
 
 .nav_left, .nav_right {
-  width: 32rem; }
+  width: 32rem;
+  line-height: 3rem; }
 
 .menu_button {
   width: 20px;
@@ -543,7 +545,7 @@ a:hover {
 .nav_show {
   display: none;
   width: 78.6rem;
-  min-height: 100vh;
+  height: 100vh;
   position: absolute;
   top: 0;
   left: 20rem;
@@ -1003,7 +1005,7 @@ input {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  height: 53rem;
+  height: 56rem;
   margin: 1.6rem 11rem 0;
   overflow: hidden; }
 
