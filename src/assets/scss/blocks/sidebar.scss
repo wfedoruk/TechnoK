@@ -59,16 +59,13 @@
     
     font-size: 2rem;
     line-height: 3.8rem;
-    padding: 10rem 0 0 3.8rem;
+    padding-top: 10rem;
     
     @include breackpoint($br-1024) {
         display: none;
     }
 
-    // @include breackpoint($br-1440) {
-    //     font-size: 1.8rem;
-        
-    // }
+   
 }
 
 .sidebar_navigation >li{
@@ -79,7 +76,7 @@
 
 .sidebar_nav {
     color: $white;
-    
+    margin-left: 3.8rem;
     display: inline-block;
 
     // height: 5.8rem;
@@ -132,12 +129,7 @@
 
 .sidebar_navigation li:hover .sidebar_nav{
 
-    // content: '';
-    // position: absolute;
-    // right: 0;
-    // left: 0;
-    // bottom: 10px;
-    // width: 100%;
+ 
     padding-bottom: 5px;
     border-bottom: 1px solid $gold;
     transition: 1s;
