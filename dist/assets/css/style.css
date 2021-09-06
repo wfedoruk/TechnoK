@@ -365,7 +365,7 @@ html {
     font-family: "Futura PT Book";
 }
 
-@media (max-width: 1919px) {
+@media (max-width: 1920px) {
     html {
         font-size: 10px;
     }
@@ -463,8 +463,8 @@ a:hover {
 }
 
 .sidebar_header {
+    min-height: calc(100vh - 15rem);
     padding-top: 5rem;
-    margin-bottom: 36.5rem;
 }
 
 @media (max-width: 1025px) {
@@ -477,7 +477,6 @@ a:hover {
 
 .sidebar_header img {
     width: 12.3rem;
-    height: 2.1rem;
     margin-left: 3.8rem;
 }
 
@@ -488,9 +487,9 @@ a:hover {
 }
 
 .nav {
-    margin-top: 10rem;
     font-size: 2rem;
     line-height: 3.8rem;
+    padding-top: 10rem;
 }
 
 @media (max-width: 1025px) {
@@ -596,7 +595,6 @@ a:hover {
     justify-content: space-around;
     font-size: 1.6rem;
     line-height: 3.8rem;
-    padding-top: 6.1rem;
 }
 
 .nav_inner h2 {
@@ -652,7 +650,7 @@ a:hover {
 .nav_show {
     display: none;
     width: 78.6rem;
-    height: 108rem;
+    min-height: 100vh;
     position: absolute;
     top: 0;
     left: 20rem;
@@ -770,6 +768,7 @@ nav a:hover {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    height: 100vh;
     background: #1B1B1B;
     position: relative;
 }
@@ -782,10 +781,11 @@ nav a:hover {
 
 .offer_block {
     width: 50rem;
-    height: 120rem;
+    min-height: calc(100vh + 22rem);
     position: absolute;
     left: 0;
     background-color: #FEBA03;
+    padding: 10rem 8rem 0 5rem;
 }
 
 @media (max-width: 1025px) {
@@ -795,12 +795,13 @@ nav a:hover {
         position: absolute;
         left: 0;
         bottom: -220px;
+        padding: 0;
+        min-height: 220px;
     }
 }
 
 .offer_block_inner {
     background-color: #FEBA03;
-    margin: 17.1rem 8rem 0 5rem;
 }
 
 @media (max-width: 1025px) {
@@ -851,7 +852,7 @@ nav a:hover {
     margin-left: 20rem;
     overflow: hidden;
     position: relative;
-    height: 100rem;
+    height: 100vh;
 }
 
 @media (max-width: 1025px) {
@@ -869,16 +870,18 @@ nav a:hover {
 }
 
 .banner_block_image img {
-    width: 172rem;
-    height: 100rem;
+    width: 100%;
+    height: 100vh;
+    top: 0;
     opacity: .7;
     margin-left: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
 }
 
 .banner_block_inner {
     height: 100rem;
-    margin-top: 36rem;
-    margin-right: 11rem;
+    padding: 36rem 11rem 0 0;
     position: absolute;
     top: 0;
     right: 0;
@@ -886,7 +889,7 @@ nav a:hover {
 
 @media (max-width: 1025px) {
     .banner_block_inner {
-        margin-top: 25rem;
+        padding-top: 25rem;
     }
 }
 
@@ -1203,8 +1206,7 @@ input {
 
 .about_company_text {
     width: 100%;
-    margin-top: 4.7rem;
-    margin-left: 3rem;
+    padding: 4.7rem 0 0 3rem;
 }
 
 .about_company_text h4 {
@@ -1307,7 +1309,7 @@ input {
 
 .serv_slider_text {
     width: 30rem;
-    height: 15rem;
+    height: 20rem;
     margin: 0 auto;
     font-size: 1.5rem;
     line-height: 3rem;
@@ -1316,7 +1318,7 @@ input {
 
 .serv_slider_text h5 {
     font-size: 1.8rem;
-    margin-top: 4rem;
+    padding-top: 4rem;
     color: #FEBA03;
 }
 
@@ -1424,9 +1426,12 @@ input {
     height: .5rem;
     background: #FEBA03;
     position: absolute;
-    top: -1px;
-    left: 0;
+    top: 0;
     z-index: 10;
+}
+
+.loans_block_image hr.right:after {
+    right: 0;
 }
 
 .loans_block_image img {
@@ -1498,8 +1503,7 @@ input {
 }
 
 .company_heading {
-    padding-top: 10rem;
-    margin-bottom: 7rem;
+    padding: 10rem 0 7rem;
 }
 
 .company_text {

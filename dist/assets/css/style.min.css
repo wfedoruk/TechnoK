@@ -417,7 +417,7 @@ a:hover {
 .nav {
   font-size: 2rem;
   line-height: 3.8rem;
-  padding: 10rem 0 0 3.8rem; }
+  padding-top: 10rem; }
   @media (max-width: 1025px) {
     .nav {
       display: none; } }
@@ -429,6 +429,7 @@ a:hover {
 
 .sidebar_nav {
   color: #fff;
+  margin-left: 3.8rem;
   display: inline-block;
   position: relative; }
 
@@ -655,7 +656,8 @@ nav a:hover {
       position: absolute;
       left: 0;
       bottom: -220px;
-      padding: 0; } }
+      padding: 0;
+      min-height: 220px; } }
 
 .offer_block_inner {
   background-color: #FEBA03; }
@@ -723,7 +725,7 @@ nav a:hover {
   right: 0; }
   @media (max-width: 1025px) {
     .banner_block_inner {
-      margin-top: 25rem; } }
+      padding-top: 25rem; } }
 
 .heading {
   line-height: 8.5rem;
@@ -1001,8 +1003,8 @@ input {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  height: 56rem;
-  margin: 1.6rem 11rem 0 9rem;
+  height: 53rem;
+  margin: 1.6rem 11rem 0;
   overflow: hidden; }
 
 .serv_slider .slick-slide {
@@ -1034,7 +1036,7 @@ input {
 
 .serv_slider_text {
   width: 30rem;
-  height: 15rem;
+  height: 20rem;
   margin: 0 auto;
   font-size: 1.5rem;
   line-height: 3rem;
@@ -1130,9 +1132,11 @@ input {
   height: .5rem;
   background: #FEBA03;
   position: absolute;
-  top: -1px;
-  left: 0;
+  top: 0;
   z-index: 10; }
+
+.loans_block_image hr.right:after {
+  right: 0; }
 
 .loans_block_image img {
   display: block;

@@ -66,11 +66,15 @@
     height: .5rem;
     background: $gold;
     position: absolute;
-    top: -1px;
-    left: 0;
+    top: 0;
+    
     z-index: 10;
     
 
+}
+
+.loans_block_image hr.right:after {
+    right: 0;
 }
 
 .loans_block_image img {

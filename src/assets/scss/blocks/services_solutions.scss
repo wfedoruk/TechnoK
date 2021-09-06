@@ -43,8 +43,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 56rem;
-    margin: 1.6rem 11rem 0 9rem;
+    height: 53rem;
+    margin: 1.6rem 11rem 0;
     overflow: hidden;
     // @include breackpoint($br-1440) {
     //     margin: 1.6rem 5.5rem;
@@ -100,7 +100,7 @@
 
 .serv_slider_text {
     width: 30rem;
-    height: 15rem;
+    height: 20rem;
     margin: 0 auto;
     font-size: 1.5rem;
     line-height: 3rem;
