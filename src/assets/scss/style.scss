@@ -6,29 +6,105 @@
 
 
 html {
-    font-size: 12px;
+    font-size: 13px;
     font-family: $book;
 
-    @include breackpoint($br-1920) {
-        font-size: 10px;
-    }
+    // @include breackpoint($br-2560) {
+    //     font-size: 10px;
+    // }
+
+    // @include breackpoint($br-1920) {
+    //     font-size: 8.75px;
+    // }
    
-    @include breackpoint($br-1680) {
-        font-size: 9px;
-    }
+    // @include breackpoint($br-1680) {
+    //     font-size: 7.5px;
+    // }
     
-    @include breackpoint($br-1440) {
-        font-size: 8px;
-    }
+    // @include breackpoint($br-1440) {
+    //     font-size: 6.6px;
+    // }
 
-    @include breackpoint($br-1280) {
-        font-size: 7px;
-    }
+    // @include breackpoint($br-1280) {
+    //     font-size: 5.3px;
+    // }
 
-    @include breackpoint($br-1024) {
-        font-size: 6px;
-    }
+    // @include breackpoint($br-1024) {
+    //     font-size: 4px;
+    // }
+
+    // @include breackpoint($br-768) {
+    //     font-size: 3.5px;
+    // }
+
+    // @include breackpoint($br-666) {
+    //     font-size: 3.0px;
+    // }
+
+    
+
+    // @include breackpoint($br-mobLarge) {
+    //     font-size: 2.5px;
+    // }
 }
+
+
+// @media only screen and (max-width: $br-mobSmall) {
+//     html{
+//        font-size: 4px !important;
+//      }
+// }
+
+@media only screen and (max-width: $br-mobLarge) {
+    html{
+       font-size: 4px !important;
+     }
+}
+
+
+
+@media only screen and (min-width: $br-768) {
+   html {
+       font-size: 5.3px !important;
+   }
+}
+
+@media only screen and (min-width: $br-1024) {
+   html {
+       font-size: 6px !important;
+   }
+}
+
+@media only screen and (min-width: $br-1280) {
+  html {
+       font-size: 6.6px !important;
+   }
+}
+
+@media only screen and (min-width: $br-1440) {
+   html {
+       font-size: 7.5px !important;
+   }
+}
+
+@media only screen and (min-width: $br-1680) {
+   html {
+       font-size: 8.75px !important;
+   }
+}
+
+@media only screen and (min-width: $br-1920) {
+  html {
+       font-size: 10px !important;
+   }
+}
+
+@media only screen and (min-width: $br-2560) {
+    html {
+         font-size: 13px !important;
+     }
+  }
+
 body {
     background-color: $white;
    
@@ -50,11 +126,16 @@ h3 {
     line-height: 4.6rem;
     text-align: center;
     text-transform: uppercase;
+
+    @include breackpoint($br-mobLarge) {
+        font-size: 24px;
+        line-height: 30.77px;
+    }
 }
 
 h4 {
     font-family: $demi;
-    text-transform: uppercase;
+    // text-transform: uppercase;
 }
   
 h5 {

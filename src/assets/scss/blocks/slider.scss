@@ -10,8 +10,27 @@
         line-height: 8rem;
     
     }
+
+    @include breackpoint($br-mobLarge) {
+        display: none;
+        
+        
+    }
 }
 
+.sliders_controls_separate {
+    @include breackpoint($br-mobLarge) {
+        display: block;
+        
+        
+    }
+}
+
+.sliders_controls_mobile {
+    height: 45px;
+    
+    text-align: center;
+}
 
 
 .slick-dots li {

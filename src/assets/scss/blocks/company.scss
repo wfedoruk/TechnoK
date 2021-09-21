@@ -3,6 +3,9 @@
     margin-top: 3rem;
     background: $gold  url(../images/about-company.png) no-repeat;
     background-size: cover;
+    @include breackpoint($br-mobLarge) {
+        margin: 0;
+    }
     
 }
 
@@ -25,34 +28,42 @@
     margin: 0 25rem 4rem;
     // width: 120rem;
     text-align: center;
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
 
-    // @include breackpoint($br-1440) {
-    //     margin: 0 12rem 4rem;
-        
-    // }
+    @include breackpoint($br-mobLarge) {
+        width: 300px;
+        height: 250px;
+        margin: 0 auto;
+        font-size: 18px;
+        line-height: 23.08px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 11;
+        -webkit-box-orient: vertical;
 
-    // @include breackpoint($br-1366) {
-    //     margin: 0 8rem 4rem;
-        
-    // }
-    // // margin-bottom: 4rem;
+    }
 }
 
 .company_button {
     padding-bottom: 10rem;
 
-    // @include breackpoint($br-1366) {
-    //     padding-bottom: 5rem;
-        
-    // }
+    @include breackpoint($br-mobLarge) {
+        padding: 20px 0;
+        font-size: 18px;
+    }
 }
 
 .company_button button {
     display: block;
     margin: 0 auto;
+    color: $white;
     background-color: $red;
+
+    @include breackpoint($br-mobLarge) {
+        
+        font-size: 18px;
+    }
 }
 
 .company_button button:hover {

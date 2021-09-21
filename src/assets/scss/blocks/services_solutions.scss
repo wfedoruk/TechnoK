@@ -4,8 +4,9 @@
     background-color: $grey;
     color: $black;
 
-  
-
+    @include breackpoint($br-mobLarge) {
+        background-color: $white;
+    }
 }
 
 .services_solutions_head {
@@ -28,13 +29,10 @@
     }
 }
 
-.serv_arrows .arrows:last-child {
-    background: $gold;
-    opacity: 1;
-}
+
 
 .serv_arrows .arrows:hover {
-    background: $red;
+    background: $gold;
     opacity: 1;
     transition: 1s;
 }
@@ -46,10 +44,13 @@
     height: 56rem;
     margin: 1.6rem 11rem 0;
     overflow: hidden;
-    // @include breackpoint($br-1440) {
-    //     margin: 1.6rem 5.5rem;
+
+    @include breackpoint($br-mobLarge) {
+        display: block;
+        height: 100%;
+        margin: 0;
         
-    // }
+    }
 }
 
 .serv_slider .slick {
@@ -64,19 +65,35 @@
     }
 }
 
+.serv_slider .mobile_display_none {
+    display: block;
+    @include breackpoint($br-mobLarge) {
+        display: none;
+
+    }
+}
+
 .serv_slider_block {
-    width: 25%;
-    height: 50rem;
+    // width: 25%;
+    height: 55rem;
     background-color: $grey;
     position: relative;
-
+    @include breackpoint($br-mobLarge) {
+        width: 300px;
+        background-color: $white;
+        height: auto;
+        margin: 10px auto;
+        box-shadow: 5px 0px 30px rgba(0, 0, 0, 0.1);
+        padding-bottom: 10px;
+    }
+    
 }
 
 
 
 
 .serv_slider_block:last-child {
-    
+    margin-bottom: 20px;
     padding-right: 0;
   
 }
@@ -89,6 +106,11 @@
 
 .serv_slider_image {
     text-align: -webkit-center;
+
+    @include breackpoint($br-mobLarge) {
+        display: none;
+        
+    }
 }
 
 .serv_slider_image img {
@@ -105,7 +127,18 @@
     font-size: 1.5rem;
     line-height: 3rem;
     padding: 0 1rem ;
-    
+
+    @include breackpoint($br-1024) {
+        height: 17rem;
+        
+    }
+    @include breackpoint($br-mobLarge) {
+        width: auto;
+        height: auto;
+        font-size: 16px;
+        line-height: 25.6px;
+        text-align: center;
+    }
     
 }
 
@@ -113,6 +146,13 @@
     font-size: 1.8rem;
     padding-top: 4rem;
     color: $gold;
+
+    @include breackpoint($br-mobLarge) {
+        
+        font-size: 20px;
+        line-height: 32px;
+        
+    }
 }
 .serv_button {
     
@@ -124,6 +164,12 @@
     margin: auto;
     background-color: $black;
     color: $white;
+
+    @include breackpoint($br-mobLarge) {
+        display: block;
+        margin: 10px auto;
+        
+    }
     
 }
 
@@ -140,20 +186,20 @@
     
 }
 
-.serv_slider_block:first-child, .serv_slider_block:last-child{
-    background-color: inherit;
-}
+// .serv_slider_block:first-child, .serv_slider_block:last-child{
+//     background-color: inherit;
+// }
 
-.serv_slider_block:first-child button {
-    display: none;
-}
+// .serv_slider_block:first-child button {
+//     display: none;
+// }
 
-.serv_slider_block:last-child button {
-    display: none;
-}
+// .serv_slider_block:last-child button {
+//     display: none;
+// }
 
 .serv_all {
-    margin-top: 3rem;
+    
     padding-bottom: 5rem;
 }
 
@@ -161,10 +207,10 @@
     display: block;
     background-color: $red;
     color: $white;
-    margin: 3rem auto 0 ;
-    // @include breackpoint($br-1024) {
-    //     display: none;
-    // }
+    margin: 3rem auto 0;
+    @include breackpoint($br-mobLarge) {
+        margin: 0 auto;
+    }
 }
 
 .serv_all button:hover{

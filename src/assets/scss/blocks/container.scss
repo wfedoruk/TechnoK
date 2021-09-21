@@ -6,4 +6,8 @@
     @include breackpoint($br-2560) {
         max-width: 2360px;
     }
+
+    // @include breackpoint($br-mobLarge) {
+    //     width: 320px;
+    // }
 }

@@ -8,6 +8,13 @@
     border: none;
     font-family: $book;
 
+    @include breackpoint($br-mobLarge) {
+        width: 250px;
+        height: 60px;
+        font-size: 18px;
+        
+    }
+
     // @include breackpoint($br-1680) {
     //     width: 22.5rem;
     //     height: 5.4rem;

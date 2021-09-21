@@ -6,7 +6,11 @@
     position: relative;
     
     @include breackpoint($br-1024) {
-        height: 560px;   
+        height: 100rem;   
+    }
+
+    @include breackpoint($br-mobLarge) {
+        height: auto;
     }
    
 }
@@ -17,35 +21,23 @@
     position: absolute;
     left: 0;
     background-color: $gold;
-    padding: 10rem 8rem 0 5rem;
+    padding: 17rem 8rem 0 5rem;
    
-  
 
-
-    // @include breackpoint($br-1920) {
-    //     width: 50rem;
-    // }
-   
-    // @include breackpoint($br-1680) {
-    //     width: 43rem;
-    // }
-    
-    // @include breackpoint($br-1440) {
-    //     width: 35rem;
-    // }
-
-    // @include breackpoint($br-1280) {
-    //     width: 31rem;
-    // }
-
-    @include breackpoint($br-1024) {
+       @include breackpoint($br-1024) {
         width: 100%;
-        height: 220px;
+        height: 23rem;
         position: absolute;
         left: 0;
-        bottom: -220px;
+        bottom: -23rem;
         padding: 0;
-        min-height: 220px;
+        min-height: 23rem;
+    }
+
+    @include breackpoint($br-mobLarge) {
+        position: static;
+        padding: 0;
+        
     }
   
 }
@@ -53,36 +45,34 @@
 .offer_block_inner {
    
     background-color: $gold;
-    // margin: 17.1rem 8rem 0 5rem;
+    
 
-   
-
-    // @include breackpoint($br-1680) {
-    //     margin: 12rem 8rem 0 5rem;
-        
-        
-    // }
-   
-    // @include breackpoint($br-1440) {
-    //     margin: 10rem 8rem 0 5rem;
-        
-    // }
-
-    // @include breackpoint($br-1280) {
-    //     margin: 7rem 8rem 0 5rem;
-        
-    // }
-
+  
     @include breackpoint($br-1024) {
+        
         display: flex;
-       
-        margin: 0;
-        margin-top: 3.8rem;
+        
+        
+        
+    }
+
+    @include breackpoint($br-mobLarge) {
+        padding-top: 10px;
+        flex-wrap: wrap;
+        width: 300px;
+        margin: 0 auto;
+    }
+}
+.offer_block_inner div {
+    @include breackpoint($br-mobLarge) {
+           
+        width: 50%;
     }
 }
 
+
 .offer_block_inner h3 {
-    
+    // padding-top: 6.35rem;
     padding-bottom: 2rem;
     
     text-align: left;
@@ -93,8 +83,23 @@
         font-size: 4rem;
         line-height: 5rem;
         text-decoration-line: underline;
-        padding-top: 3.8rem;
+         padding-top: 3.8rem;
+        
+    }
+
+    @include breackpoint($br-mobLarge) {
+       padding-top: 10px;
+       font-size: 18px;
+       line-height: 23px;
+       text-align: center;
+        
+    }
+
+    @include breackpoint($br-mobSmall) {
+        
         padding-bottom: 0;
+        padding-left: 40px;
+        text-align: left;
     }
 }
 
@@ -102,28 +107,19 @@
     font-size: 1.8rem;
     line-height: 2.3rem;
     color: $white;
-    padding-bottom: 8rem;
+    padding-bottom: 5rem;
 
-    // @include breackpoint($br-1680) {
-    //     font-size: 17px;
-    //     line-height: 22px;
-    //     margin-bottom: 8rem;
-        
-    // }
-
-    // @include breackpoint($br-1440) {
-    //     font-size: 16px;
-    //     line-height: 20px;
-    //     margin-bottom: 5rem;
-        
-    // }
-
+    
     @include breackpoint($br-1024) {
         text-align: center;
-        font-size: 16px;
-        line-height: 23px;
-        margin: 0 1rem;
-        padding: 3.8rem 4rem 0;
+        font-size: 2.65rem;
+        line-height: 3.8rem;
+        // margin: 0 1rem;
+        padding: 0 4.5rem 8rem;
+    }
+
+    @include breackpoint($br-mobLarge) {
+        display: none;
     }
 }
 
@@ -154,27 +150,61 @@
     
     @include breackpoint($br-1024) {
         margin-left: 0;
-        margin-top: 80px;
+        margin-top: 8rem;
         width: 100%;
-        height: 100rem;
+        height: 110rem;
         
         
     }
+
+    @include breackpoint($br-mobLarge) {
+       
+       
+
+        min-height: calc(100vh - 172px);
+        margin-top: 80px;
+    }
+
+    @include breackpoint($br-mobSmall) {
+        max-height: calc(100vh - 172px);
+        margin-top: 80px;
+    }
 }
+
+
 
 .banner_block_image {
     
    float: right;
    overflow: hidden;
+
+}
+.banner_block_image_cover {
+    background: #1B1B1B;
+    opacity: .3; 
 }
 
 .banner_block_image img {
     width: 100%;
     height: 100vh;
     top: 0;
-    opacity: .7;
+    
     margin-left: auto;
     object-fit: cover;	
+
+    @include breackpoint($br-1024) {
+        
+        height: auto;
+        
+        
+    }
+
+    @include breackpoint($br-mobSmall) {
+        position: relative;
+        width: 508px;
+        min-height: calc(100vh);
+        left: -80px;
+    }
     
 }
 // .banner_block:before {
@@ -211,10 +241,11 @@
     
     height: 100rem;
    
-    padding: 36rem 11rem 0 0;
+    padding: 25rem 11rem 0 0;
     position: absolute;
-    top: 0;
+    top: 50%;
     right: 0;
+    transform: translateY(-50%);
 
     @include breackpoint($br-1024) {
         padding-top: 25rem;
@@ -222,10 +253,16 @@
         
     }
 
-    // @include breackpoint($br-1440) {
-    //     margin-right: 5.5rem;
+    @include breackpoint($br-mobLarge) {
         
-    // }
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        padding-top: 0;
+        padding-right: 0;
+        
+    }
 }
 
 .heading {
@@ -247,6 +284,19 @@
        
         font-size: 6rem;
     }
+
+    @include breackpoint($br-mobLarge) {
+        font-size: 30px;
+        line-height: 38.46px;
+        margin: 0;
+        padding: 0;
+        width: 320px; 
+        text-align: center;
+    }
+}
+
+.heading .display_none {
+    margin: 0 auto;
 }
 
 .form_inner {
@@ -262,17 +312,32 @@
 
 .form_inner  form {
     display: flex;
-    // max-width: 80rem;
-    // max-height: 6rem;
+
+    @include breackpoint($br-mobLarge) {
+        display: block;
+    }
 }
 
+
+// .form_inner div {
+//     @include breackpoint($br-mobLarge) {
+//         display: block;
+//         margin: 0 auto;
+//     }
+// }
 .request_input {
     margin-right: 2rem;
     background-color: $white;
     opacity: .7;
     padding-left: 2rem;
     border: none;
-    
+
+    @include breackpoint($br-mobLarge) {
+        margin: 0 auto;
+        display: block;
+        font-size: 18px;
+    }
+   
 }
 
 .request_input::-webkit-input-placeholder {
@@ -282,6 +347,11 @@
     @include breackpoint($br-1024) {
        
         font-size: 3rem;
+    }
+
+    @include breackpoint($br-mobLarge) {
+        text-align: center;
+        font-size: 18px;
     }
 }
 
@@ -296,6 +366,12 @@
        
         font-size: 3rem;
     }
+
+    @include breackpoint($br-mobLarge) {
+        margin: 0 auto;
+        display: block;
+        font-size: 18px;
+    }
 }
 
 .submit_input:hover {
@@ -309,15 +385,35 @@
     text-align: right;
     font-size: 1.3rem;
     margin-top: 1rem;
+    
+
+    @include breackpoint($br-1024) {
+        font-size: 2.1rem;
+    }
+
+    @include breackpoint($br-mobLarge) {
+        width: 262px;
+        text-align: center;
+        font-size: 12px;
+        line-height: 15px;
+        font-family: $bold;
+        padding-top: 10px;
+        margin: 0 auto;
+       
+    }
+
+    @include breackpoint($br-mobSmall) {
+        padding-top: 5px;
+    }
 }
 
 
-.start_block_bottom {
-    display: flex;
-    background-color: $white;
-    position: relative;
+// .start_block_bottom {
+//     display: flex;
+//     background-color: $white;
+//     position: relative;
    
-}
+// }
 
 // .bottom_offer_block {
 //     width: 29%;
@@ -346,6 +442,19 @@
         
        
     }
+
+    
+    @include breackpoint($br-mobLarge) {
+        width: 20rem;
+        top: -30rem; 
+        display: block;
+        float: none;
+        margin: 0 auto;
+        
+       
+    }
+
+    
     
 }
 
@@ -358,12 +467,23 @@
     z-index: 10;
 
     @include breackpoint($br-1024) {
-        top: -25rem;
-        left: unset;
-        right: 0;
+        // top: -25rem;
+        // left: unset;
+        // right: 0;
         margin: 0;
         padding-left: 3.5rem;
     }
+ 
+
+    @include breackpoint($br-mobLarge) {
+        
+        top: unset;
+        right: unset;
+        padding-left: 0;
+       
+    }
+
+    
 
 }
 
@@ -374,6 +494,7 @@
     height: 20.6rem;
     background-color: $white;
     position: relative;
+    padding: 0;
 }
 
 .bottom_banner_block h3{

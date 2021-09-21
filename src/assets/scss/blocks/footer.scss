@@ -9,7 +9,10 @@ footer {
 
 .footer_inner {
     margin: 0 11rem 5rem;
-
+    @include breackpoint($br-mobLarge) {
+        margin: 0 auto;
+        height: 370px;
+    }
 }
 
 .footer_nav {
@@ -18,7 +21,7 @@ footer {
     top: 0;
     right: 0;
     margin-right: 11rem;
-    float: right;
+    // float: right;
     height: 17.5rem;
     font-size: 1.6rem;
     line-height: 4.1rem;
@@ -27,38 +30,88 @@ footer {
     font-weight: 600;
     padding-top: 6.5rem;
 
-   
-
-    // @include breackpoint($br-1280) {
-    //     display: block;
-        
-    // }
+    @include breackpoint($br-mobLarge) {
+        width: 100%;
+        display: block;
+        position: initial;
+        top: 0;
+        left: 0;
+        font-size: 18px;
+        line-height: 23px;
+        float: none;
+        padding-top: 66px;
+       
+    }
 }
 
 .footer_nav_list {
     
     margin-right: 5rem;
 
-    // @include breackpoint($br-1440) {
-    //     margin-right: 5rem;
-    //     margin-bottom: 7rem;
+    @include breackpoint($br-mobLarge) {
         
-    // }
+        margin: 0;
+        text-align: center;
+       
+    }
+}
+
+// .footer_nav_list ul {
+//     @include breackpoint($br-mobLarge) {
+//         display: block;
+//         margin: 0 auto;
+       
+//     }
+// }
+
+.footer_nav li {
+    color: $red;
+    @include breackpoint($br-mobLarge) {
+        
+        padding-bottom: 20px;
+        color: #646464;
+       
+    }
 }
 
 .footer_nav a {
     font-family: $medium;
     text-decoration: none;
-    color: $red;
+    
+
+    
 }
 
 .footer_nav a:hover {
     color: $gold;
 }
 
+.footer_logo {
+    @include breackpoint($br-mobLarge) {
+        width: 100%;
+        
+       
+    }
+}
+.footer_logo_wrapper {
+    width: 100%;
+    @include breackpoint($br-mobLarge) {
+        
+        padding-top: 30px;
+        position: absolute;
+        top: 0;
+        text-align: center;
+    }
+}
+
 .footer_logo img {
     width: 15.5rem;
     height: 2.6rem;
+    @include breackpoint($br-mobLarge) {
+        width: 150px;
+        height: 26px;
+
+    }
 }
 
 .footer_blocks {
@@ -67,15 +120,10 @@ footer {
     justify-content: space-between;
     margin-right: 38rem;
     
-    // @include breackpoint($br-1440) {
-    //     margin-right: 35rem;
-        
-    // }
-
-    // @include breackpoint($br-1280) {
-    //     margin-right: 20rem;
-        
-    // }
+    @include breackpoint($br-mobLarge) {
+        display: none;
+       
+    }
     
 }
 
@@ -83,12 +131,12 @@ footer {
     margin-top: 2rem;
 }
 
-.footer_block li:first-child, .footer_block span {
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-    line-height: 3.1rem;
-    color:#646464;
-}
+// .footer_block li:first-child, .footer_block span {
+//     margin-bottom: 1rem;
+//     font-size: 1.5rem;
+//     line-height: 3.1rem;
+//     color:#646464;
+// }
 
 .footer_block span {
     display: block;
@@ -100,20 +148,44 @@ footer {
     padding-top: 3rem;
     display: flex;
     justify-content: space-between;
-    position: relative;
+    @include breackpoint($br-mobLarge) {
+        padding: 0;
+        justify-content: center;
+        background-color: $grey;
+       
+    }
     
+}
+
+.footer_social a {
+    @include breackpoint($br-mobLarge) {
+        padding: 20px 0;
+        
+        
+       
+    }
 }
 
 .footer_social span {
     width: 4.8rem;
     height: 4.8rem;
     border: none;
+    @include breackpoint($br-mobLarge) {
+       margin-left: 10px;
+        width: 48px;
+        height: 48px;
+        
+       
+    }
 }
 .img_vk{
     
     width: 4.8rem;
     height: 4.8rem;
     content: url(../images/footer/vk.png);
+    @include breackpoint($br-mobLarge) {
+        content: url(../images/footer/vk_hover.png);
+    }
 }
 
 .img_vk:hover {
@@ -124,6 +196,9 @@ footer {
 .img_inst {
     
     content: url(../images/footer/inst.png);
+    @include breackpoint($br-mobLarge) {
+        content:  url(../images/footer/inst_hover.png);
+    }
 }
 
 .img_inst:hover {
@@ -133,6 +208,9 @@ footer {
 
 .img_fb {
     content: url(../images/footer/fb.png);
+    @include breackpoint($br-mobLarge) {
+        content: url(../images/footer/fb_hover.png);
+    }
 }
 
 .img_fb:hover {
@@ -149,12 +227,76 @@ footer {
     line-height: 2.3rem;  
     color: $black;
     padding: 3.7rem 11rem;
+
+    @include breackpoint($br-mobLarge) {
+        padding: 0;
+        background-color: #fff;
+        display: block;
+        text-align: center;
+        font-size: 14px;    
+        
+       
+    }
 }
 
-.footer_policy div:first-child {
-    font-weight: bold;
-}
+// .footer_policy div:first-child {
+//     font-weight: bold;
+// }
 
 .footer_policy a:hover {
     color: $gold;
+}
+
+.footer_policy_logo {
+    @include breackpoint($br-mobLarge) {
+        height: 88px;
+        line-height: 88px;
+        text-align: center;
+        font-weight: bold;
+        text-transform: initial;
+    } 
+   
+}
+
+.footer_policy_text {
+    @include breackpoint($br-mobLarge) {
+        height: 38px;
+        line-height: 38px;
+        width: 100%;
+        background-color: $white;
+           
+
+    } 
+    
+}
+
+.footer_policy_dev {
+    @include breackpoint($br-mobLarge) {
+        height: 38px;
+        line-height: 38px;
+        width: 100%;
+        background-color: $grey;
+           
+
+    } 
+    
+}
+
+.footer_policy .display {
+    @include breackpoint($br-mobLarge) {
+        display: none;
+           
+
+    }    
+}
+
+.footer_social .display_none {
+    display: none;
+    @include breackpoint($br-mobLarge) {
+        display: block;
+        color: $black;
+        font-size: 14px;
+           
+
+    }
 }

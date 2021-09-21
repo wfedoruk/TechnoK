@@ -12,8 +12,13 @@
 
     @include breackpoint($br-1024) {
         width: 100%;
-        height: 80px;
-  }
+        height: 13.5rem;
+    }
+
+    @include breackpoint($br-mobLarge) {
+        
+        height: 81px;
+    }
 
 }
 
@@ -30,7 +35,7 @@
 .sidebar_header {
     // display: block;
     // width: auto;
-    min-height: calc(100vh - 15rem);
+    // min-height: calc(100vh - 15rem);
     padding-top: 5rem;
     
     
@@ -38,7 +43,16 @@
     @include breackpoint($br-1024) {
         margin: 0;
         padding: 5rem 0;
-        height: auto;
+        min-height: 5rem;
+        
+
+    }
+
+    @include breackpoint($br-mobLarge) {
+        margin: 0;
+        padding: 30px 0;
+        min-height: 80px;
+        border-bottom: 1px solid $gold;
 
     }
 }
@@ -50,22 +64,63 @@
     // margin-bottom: 10rem;
     @include breackpoint($br-1024) {
         margin-left: 8.2rem;
+        width: 20rem;
 
+    }
+
+    @include breackpoint($br-mobLarge) {
+        
+        width: 123px;
     }
   
 }
 
+.sidebar_body {
+    @include breackpoint($br-1024) {
+        // float: right;
+        height: auto;
+        width: 54rem;
+        background-color: $black;
+        font-size: 4rem;
+        display: none;
+        
+    }
+
+    @include breackpoint($br-mobLarge) {
+        width: 100%; 
+        height: auto;     
+    }
+
+    @include breackpoint($br-mobSmall) {
+        width: 100%; 
+        
+        min-height: calc(100vh - 172px);
+    
+          
+    }
+}
+
 .nav {
+    min-height: calc(100vh - 20rem);
     
     font-size: 2rem;
     line-height: 3.8rem;
     padding-top: 10rem;
-    
     @include breackpoint($br-1024) {
-        display: none;
-    }
+        font-size: 3rem;
+        line-height: 3rem;
+        padding-top: 0;
+        min-height: initial;
+        
 
-   
+
+    }
+  
+    @include breackpoint($br-mobLarge) {
+        
+        font-size: 24px;
+        line-height: 40.77px;
+    }
 }
 
 .sidebar_navigation >li{
@@ -106,8 +161,10 @@
     // margin-left: .4rem;
     margin-bottom: .1rem;
     background-color: transparent;
-    
-
+    @include breackpoint($br-mobLarge) {
+        width: 7px;
+        height: 10px;
+    }
     
 }
 .sidebar_navigation> li:hover .arrow_nav {
@@ -123,15 +180,21 @@
 }
 
 .sidebar_navigation >li .sidebar_nav {
-    padding-bottom: 5px;
-    border-bottom: 1px solid transparent;
+    padding-bottom: .5rem;
+    border-bottom: .1rem solid transparent;
+
+    @include breackpoint($br-1024) {
+        margin: 4rem 0 0 5rem;
+    }
+
+    @include breackpoint($br-mobLarge) {
+        margin: 30px 0 0 30px;
+    }
 }
 
 .sidebar_navigation li:hover .sidebar_nav{
 
- 
-    padding-bottom: 5px;
-    border-bottom: 1px solid $gold;
+    border-bottom: .1rem  solid $gold;
     transition: 1s;
 
     
@@ -139,8 +202,8 @@
 }
 
 .union img{
-    width: 64px;
-    height: 18px;
+    width: 6.4rem;
+    height: 1.8rem;
 }
 
 .clicked {
@@ -150,6 +213,10 @@
     box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.3);
 
 }
+// .clicked:hover {
+//     background: $black;
+//     transition: 1.5s;
+// }
 
 
 
@@ -158,9 +225,12 @@
     width: auto;
     margin-left: 3.8rem;
     @include breackpoint($br-1024) {
-        display: none;
+        margin-left: 6rem;
+        
     }
 }
+
+
 
 .tel {
     font-size: 1.6rem;
@@ -168,18 +238,59 @@
 
     color: $gold;
     text-decoration: none;
+
+    @include breackpoint($br-1024) {
+        font-size: 3rem;
+        line-height: 3.1rem;
+        padding: 6rem 0;
+    }
+
+    @include breackpoint($br-mobLarge) {
+        font-size: 21px;
+        line-height: 27px;
+        padding: 37px 0;
+    }
     
 }
 
-.tel:hover {
-    color: $red;
+.tel span {
+        
+    @include breackpoint($br-1024) {
+        display: block;
+        font-size: 3rem;
+        line-height: 3rem;
+        margin-top: 10px;
+    }
+
+    @include breackpoint($br-mobLarge) {
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+
+.tel :hover {
+    color: $red !important;
 }
 
 .adress {
     margin-top: 3rem;
+    
     font-size: 1.4rem;
     line-height: 1.8rem;
     color: $white;
+
+    @include breackpoint($br-1024) {
+        margin-top: 0;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        padding-bottom: 6rem;
+    }
+
+    @include breackpoint($br-mobLarge) {
+        font-size: 18px;
+        line-height: 25px;
+        padding-bottom: 30px;
+    }
     
 
 }
@@ -190,36 +301,81 @@
 
 .nav_inner {
     display: flex;
+    position: relative;
     justify-content: space-around;
     font-size: 1.6rem;
+    background-color: $black;
     
+    @include breackpoint($br-mobLarge) {
+        display: block;
+        max-height: calc(100vh - 82px);
+        overflow-x:hidden; 
+         overflow-y:auto;
+    }
 
 
 }
 
 
+.nav_inner_scroll {
+    overflow-x:hidden; 
+    overflow-y:auto;
+}
+
+.nav_inner li {
+    @include breackpoint($br-1024) {
+        
+        
+    }
+
+    @include breackpoint($br-mobLarge) {
+        padding-bottom: 20px;
+        font-size: 20px;
+    }
+}
+
 .nav_inner h2 {
     display: block;
-    padding-top: 5.5rem;
-    font-size: 1.8rem;
+    padding-top: 7rem;
+    font-size: 2rem;
     color: $gold;
     line-height: 3.8rem;
+    font-family: $demi;
+    @include breackpoint($br-1024) {
+       
+        padding-top: 5rem;
+    }
+
+    @include breackpoint($br-mobLarge) {
+        padding-top: 37px;
+        font-size: 20px;
+    }
 }
 
 .nav_inner a {
     position: relative;
+
+    // @include breackpoint($br-mobLarge) {
+    //     font-size: 4rem;
+    // }
     
 }
 
 .nav_left, .nav_right {
     width: 32rem;
     line-height: 3rem;
+
+    @include breackpoint($br-mobLarge) {
+        width: auto;
+        line-height: 6rem;
+        margin: 0 30px;
+    }
 }
 
 
 .menu_button {
-    width: 20px;
-    padding: 10px 0;
+    width: 3.5rem;
+    padding: 2rem 0;
     // line-height: 30;
     // font-size: 0;
     // color: $gold;
@@ -233,6 +389,10 @@
 
     @include breackpoint($br-1024) {
         display: block;
+    }
+
+    @include breackpoint($br-mobLarge) {
+        margin-right: 30px;
     }
 }
 
@@ -249,22 +409,63 @@
 .menu_item, .menu_item:before, .menu_item:after {
     content: "";
     display: block;
-    width: 20px;
-    height: 1px;
+    width: 3.5rem;
+    height: .2rem;
     background: $gold;
     position: relative;
     
     right: 0;
     z-index: 100;
+
+    @include breackpoint($br-mobLarge) {
+        width: 20px;
+        height: 1px;
+    }
+}
+
+.menu_button.active .menu_item {
+    @include breackpoint($br-mobLarge) {
+        background: none;
+        border: 0;
+    }
 }
 
 .menu_item:before {
-    top: 5px;
+    top: .9rem; 
+
+    @include breackpoint($br-mobLarge) {
+        top: 5px;
+    }
     
 }
 
 .menu_item:after {
-    bottom: 6px;
+    bottom: 1.1rem;
+
+    @include breackpoint($br-mobLarge) {
+        bottom: 6px;
+    }
+}
+
+.menu_button.active .menu_item:before{
+    @include breackpoint($br-mobLarge) {
+        transform-origin: left top;
+        transform: rotate(-45deg) translateX(-3.5px);
+
+        transition: transform .2s linear;
+        height: 1.2px;
+    }
+}
+
+.menu_button.active .menu_item:after{
+    @include breackpoint($br-mobLarge) {
+        transform-origin: left bottom;
+        transform: rotate(45deg) translateX(-3px);
+
+        transition: transform .2s linear;
+        height: 1.2px;
+    }
+    
 }
 
 .nav_show {
@@ -277,9 +478,23 @@
     z-index: 1000;
     background-color: $black;
     color: $white;
+
     @include breackpoint($br-1024) {
-        
+        background-color: $black;
+        height: 100%;
         left: 0;
+        top: 10rem;
+    }
+
+    @include breackpoint($br-768) {
+        height: auto;
+        left: 0;
+        top: 82px;
+        
+    }
+
+    @include breackpoint($br-mobLarge) {
+        width: 100%;
     }
 }
 
@@ -291,7 +506,7 @@
     margin-top: 4rem;
     margin-left: 65rem;
     width: 10.3rem;
-    height: 2rem; 
+    height: 3rem; 
     
     border: none;
     background-color: transparent;
@@ -300,6 +515,10 @@
     text-align: right;
     text-transform: uppercase;
     color: #6A6A6A;
+
+    @include breackpoint($br-mobLarge) {
+        display: none;
+    }
 }
 
 .sidebar_cross:after {
@@ -312,6 +531,9 @@
     position: absolute;
     top: .5rem;
     right: -2rem;
+    @include breackpoint($br-mobLarge) {
+        display: none;
+    }
 }
 
 .sidebar_cross:before {
@@ -325,4 +547,24 @@
     position: absolute;
     top: .5rem;
     right: -2rem;
+    @include breackpoint($br-mobLarge) {
+        display: none;
+    }
+}
+
+.nav_inner_arrow {
+
+    display: none;
+
+    @include breackpoint($br-mobLarge) {
+        display: block;
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        width: 10px;
+        height: 20.5px;
+        cursor: pointer;
+    }
+   
+  
 }
