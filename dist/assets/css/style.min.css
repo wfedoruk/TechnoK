@@ -462,7 +462,7 @@ a:hover {
 @media (max-width: 426px) {
   .sidebar_body {
     width: 100%;
-    min-height: calc(100vh - 172px); } }
+    min-height: calc(100vh - 82px); } }
 
 .nav {
   min-height: calc(100vh - 20rem);
